@@ -1,0 +1,253 @@
+.landing {
+  min-height: 39rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 2rem;
+}
+.landing > div {
+  width: 35rem;
+  margin-right: 2.5rem;
+  padding-block: 1rem;
+}
+.landing > div h2 {
+  margin-bottom: 2rem;
+}
+.landing > img {
+  width: 35rem;
+}
+.landing {
+  background-color: var(--color-primary);
+}
+.landing h2,
+.landing p {
+  color: var(--color-contast);
+}
+.future {
+  padding: 6.25rem 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.future h2 {
+  margin-bottom: 1rem;
+}
+.future p {
+  margin-bottom: 5rem;
+}
+.future iframe {
+  width: 75rem;
+  height: 45rem;
+  max-width: 100%;
+  max-height: 60vw;
+}
+.future {
+  background-color: var(--color-contast);
+}
+.future h2,
+.future p {
+  color: var(--color-primary);
+}
+.understanding {
+  min-height: 34rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.understanding img {
+  max-height: 34rem;
+  object-fit: contain;
+  margin-right: 2.25rem;
+}
+.understanding > div {
+  padding: 1rem;
+  max-width: 44rem;
+}
+.understanding > div h2 {
+  margin-bottom: 2rem;
+}
+.understanding > div p {
+  margin-bottom: 3rem;
+}
+.understanding > div button {
+  padding: 1rem 3rem;
+}
+.understanding {
+  background-color: var(--background-light);
+}
+.understanding h2,
+.understanding p {
+  color: var(--color-primary);
+}
+.understanding button {
+  background-color: var(--color-primary);
+  color: var(--color-contast);
+}
+.columns {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+.columns > h4 {
+  margin-bottom: 2.25rem;
+}
+.columns > p {
+  margin-bottom: 5rem;
+}
+.columns > div {
+  display: grid;
+  grid-column-gap: 5rem;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80rem;
+  max-width: 100%;
+  margin-bottom: 5rem;
+}
+.columns > div article {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.columns > div article img {
+  height: 5.75rem;
+  margin-bottom: 2.75rem;
+}
+.columns > div article h3,
+.columns > div article p {
+  margin-bottom: 3.5rem;
+}
+.columns {
+  background-color: var(--color-contast);
+}
+.columns h2,
+.columns h3,
+.columns p {
+  color: var(--color-primary);
+}
+.columns a {
+  color: var(--color-accent);
+}
+.window {
+  width: 100%;
+  display: flex;
+  min-height: 35rem;
+  position: relative;
+  align-items: center;
+  padding-block: 2rem;
+}
+.window img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 20%;
+}
+.window div {
+  width: 80rem;
+  margin-inline: auto;
+}
+.window h2,
+.window p {
+  color: var(--color-contast);
+  width: 33rem;
+}
+.window h2 {
+  margin-bottom: 2rem;
+}
+.register {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 2rem;
+}
+.register > h2 {
+  margin-bottom: 2.25rem;
+}
+.register > p {
+  margin-bottom: 2.5rem;
+}
+.register .grid {
+  width: 45rem;
+  display: grid;
+  max-width: 100%;
+  text-align: left;
+  margin-bottom: 2.5rem;
+  grid-column-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.register .grid p {
+  font-style: italic;
+}
+.register .form {
+  width: 45rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.register .form p {
+  margin-bottom: 1.25rem;
+}
+.register .form input {
+  width: 31rem;
+  border: 1px solid;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1.5rem;
+  box-sizing: border-box;
+}
+.register .form .checks {
+  width: 100%;
+  display: flex;
+  margin-block: 1.5rem 2.5rem;
+  justify-content: space-between;
+}
+.register .form .checks label {
+  display: flex;
+  align-items: center;
+}
+.register .form .checks label .checkbox {
+  display: flex;
+  min-width: 2rem;
+  min-height: 2rem;
+  border: 1px solid;
+  margin-right: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.register .form .checks label input:checked + .checkbox::after {
+  content: '';
+  margin: auto;
+  width: 0.75rem;
+  height: 0.75rem;
+  display: block;
+  border-radius: 50%;
+}
+.register .form button {
+  padding: 0.5rem 3rem;
+}
+.register {
+  background-color: var(--background-light);
+}
+.register h2,
+.register p,
+.register input,
+.register label {
+  color: var(--color-primary);
+}
+.register button {
+  color: var(--color-contast);
+  background-color: var(--color-accent);
+}
+.register .checkbox {
+  background-color: var(--color-contast);
+}
+.register .checkbox::after {
+  background-color: var(--color-accent);
+}
+/*# sourceMappingURL=index.css.map */

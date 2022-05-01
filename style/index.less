@@ -1,0 +1,254 @@
+.landing {
+  min-height: 39rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 2rem;
+  > div {
+    width: 35rem;
+    margin-right: 2.5rem;
+    padding-block: 1rem;
+    h2 {
+      margin-bottom: 2rem;
+    }
+  }
+  > img {
+    width: 35rem;
+  }
+}
+.landing {
+  background-color: var(--color-primary);
+  h2, p > {
+    color: var(--color-contast);
+  }
+}
+
+.future {
+  padding: 6.25rem 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+  p {
+    margin-bottom: 5rem;
+  }
+
+  iframe {
+    width: 75rem;
+    height: 45rem;
+    max-width: 100%;
+    max-height: 60vw;
+  }
+}
+.future {
+  background-color: var(--color-contast);
+  h2, p {
+    color: var(--color-primary);
+  }
+}
+
+.understanding {
+  min-height: 34rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    max-height: 34rem;
+    object-fit: contain;
+    margin-right: 2.25rem;
+  }
+  > div {
+    padding: 1rem;
+    max-width: 44rem;
+    h2 {
+      margin-bottom: 2rem;
+    }
+    p {
+      margin-bottom: 3rem;
+    }
+    button {
+      padding: 1rem 3rem;
+    }
+  }
+}
+.understanding {
+  background-color: var(--background-light);
+  h2, p {
+    color: var(--color-primary);
+  }
+  button {
+    background-color: var(--color-primary);
+    color: var(--color-contast);
+  }
+}
+
+.columns {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 5rem 2rem;
+  > h4 {
+    margin-bottom: 2.25rem;
+  }
+  > p {
+    margin-bottom: 5rem;
+  }
+  > div {
+    display: grid;
+    grid-column-gap: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80rem;
+    max-width: 100%;
+    margin-bottom: 5rem;
+    article {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      img {
+        height: 5.75rem;
+        margin-bottom: 2.75rem;
+      }
+      h3, p {
+        margin-bottom: 3.5rem;
+      }
+    }
+  }
+}
+.columns {
+  background-color: var(--color-contast);
+  h2, h3, p {
+    color: var(--color-primary);
+  }
+  a {
+    color: var(--color-accent);
+  }
+}
+
+.window {
+  width: 100%;
+  display: flex;
+  min-height: 35rem;
+  position: relative;
+  align-items: center;
+  padding-block: 2rem;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 20%;
+  }
+
+  div {
+    width: 80rem;
+    margin-inline: auto;
+  }
+}
+.window {
+  h2, p {
+    color: var(--color-contast);
+    width: 33rem;
+  }
+  h2 {
+    margin-bottom: 2rem;
+  }
+}
+
+.register {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 2rem;
+  > h2 {
+    margin-bottom: 2.25rem;
+  }
+  > p {
+    margin-bottom: 2.5rem;
+  }
+  .grid {
+    width: 45rem;
+    display: grid;
+    max-width: 100%;
+    text-align: left;
+    margin-bottom: 2.5rem;
+    grid-column-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    p {
+      font-style: italic;
+    }
+  }
+  .form {
+    width: 45rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    p {
+      margin-bottom: 1.25rem;
+    }
+    input {
+      width: 31rem;
+      border: 1px solid;
+      margin-bottom: 1rem;
+      padding: .75rem 1.5rem;
+      box-sizing: border-box;
+    }
+    .checks {
+      width: 100%;
+      display: flex;
+      margin-block: 1.5rem 2.5rem;
+      justify-content: space-between;
+      label {
+        display: flex;
+        align-items: center;
+        .checkbox {
+          display: flex;
+          min-width: 2rem;
+          min-height: 2rem;
+          border: 1px solid;
+          margin-right: 1rem;
+          align-items: center;
+          justify-content: center;
+        }
+
+        input:checked + .checkbox::after {
+          content: '';
+          margin: auto;
+          width: .75rem;
+          height: .75rem;
+          display: block;
+          border-radius: 50%;
+        }
+      }
+    }
+    button {
+      padding: .5rem 3rem;
+    }
+  }
+}
+.register {
+  background-color: var(--background-light);
+  h2, p, input, label {
+    color: var(--color-primary);
+  }
+  button {
+    color: var(--color-contast);
+    background-color: var(--color-accent);
+  }
+  .checkbox {
+    background-color: var(--color-contast);
+    &::after {
+      background-color: var(--color-accent);
+    }
+  }
+}

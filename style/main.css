@@ -1,0 +1,162 @@
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 5.5rem;
+  padding: 0.5rem 2rem;
+  background-color: var(--color-primary);
+  box-sizing: border-box;
+}
+nav > div {
+  height: 4.5rem;
+  width: 90rem;
+  display: flex;
+  max-width: 100%;
+  margin-inline: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+nav > div div {
+  display: flex;
+  align-items: center;
+}
+nav > div div a {
+  margin-left: 1rem;
+}
+nav > div > a,
+nav > div > a > img {
+  height: 2.5rem;
+  object-fit: contain;
+}
+.accessibility {
+  padding: 1rem 1.25rem;
+  background-color: var(--color-accent);
+  position: fixed;
+  z-index: 100;
+  right: -3rem;
+  top: 20rem;
+  font-size: 1.25rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  transform: rotate(-90deg);
+}
+.accessibility:hover {
+  cursor: pointer;
+}
+.accessibility-block {
+  right: 0;
+  top: 17rem;
+  z-index: 101;
+  padding: 1rem;
+  position: fixed;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.accessibility-block p {
+  font-size: 18px !important;
+}
+.accessibility-block .option {
+  display: flex;
+  margin-top: 0.75rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  justify-content: center;
+}
+.accessibility-block .option img {
+  margin-inline: 1rem;
+  width: 30px;
+}
+.accessibility-block .option .plus,
+.accessibility-block .option .minus {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.accessibility-block .option .plus:before,
+.accessibility-block .option .minus:before {
+  content: '';
+  width: 24px;
+  height: 2px;
+  position: absolute;
+}
+.accessibility-block .option .plus:hover,
+.accessibility-block .option .minus:hover {
+  cursor: pointer;
+}
+.accessibility-block .option .plus:after {
+  content: '';
+  width: 2px;
+  height: 24px;
+  position: absolute;
+  margin-inline: auto;
+}
+.accessibility-block .option .toggle {
+  width: 96px;
+  height: 40px;
+  display: flex;
+  border-radius: 20px;
+}
+.accessibility-block .option .toggle span {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  font-size: 14px !important;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+.accessibility-block .option .toggle span:after {
+  content: 'Off';
+}
+.accessibility-block .option .toggle input:checked + span {
+  transform: rotate(360deg);
+  margin-left: 56px;
+}
+.accessibility-block .option .toggle input:checked + span:after {
+  content: 'On';
+}
+.accessibility-block .option .toggle:hover {
+  cursor: pointer;
+}
+.accessibility-block .option.with-toggle img {
+  margin-left: 0;
+}
+.accessibility-block {
+  background-color: var(--background-light);
+}
+.accessibility-block .option {
+  background-color: var(--color-contast);
+}
+.accessibility-block .plus,
+.accessibility-block .minus {
+  background-color: var(--color-primary);
+  color: var(--color-contast);
+}
+.accessibility-block .plus:before,
+.accessibility-block .minus:before,
+.accessibility-block .plus:after,
+.accessibility-block .minus:after {
+  background-color: var(--color-contast);
+}
+.accessibility-block .plus:hover,
+.accessibility-block .minus:hover {
+  background-color: var(--color-accent);
+}
+.accessibility-block .toggle {
+  background-color: var(--background-light);
+}
+.accessibility-block .toggle span {
+  color: var(--color-contast);
+  background-color: var(--color-primary);
+}
+.accessibility-block .toggle input:checked + span {
+  background-color: var(--color-accent);
+}
+/*# sourceMappingURL=main.css.map */

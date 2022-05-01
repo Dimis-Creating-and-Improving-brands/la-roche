@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>La Roche - Home</title>
+
+    <!--  Links  -->
+    <link rel="stylesheet" href="/style/presets.css">
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/style/index.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <div>
+                <img class="button" src="/images/svgs/hamburger.svg" alt="">
+                <a href=""><img src="/images/svgs/future-of-vision.svg" alt=""></a>
+            </div>
+            <a href=""><img src="/images/svgs/logo.svg" alt=""></a>
+        </div>
+    </nav>
+    <div class="accessibility">Accessibility</div>
+    <div class="accessibility-block">
+        <p>✕</p>
+        <div class="option">
+            <div onclick="decrementContrast()" class="minus"></div>
+            <img src="/images/svgs/accessibility/contrast.svg" alt="">
+            <div onclick="incrementContrast()" class="plus"></div>
+        </div>
+        <div class="option">
+            <div onclick="decrementSize()" class="minus"></div>
+            <img src="/images/svgs/accessibility/text.svg" alt="">
+            <div onclick="incrementSize()" class="plus"></div>
+        </div>
+        <div class="option">
+            <div onclick="decrementSpacing()" class="minus"></div>
+            <img src="/images/svgs/accessibility/spacing.svg" alt="">
+            <div onclick="incrementSpacing()" class="plus"></div>
+        </div>
+        <div class="option with-toggle">
+            <img src="/images/svgs/accessibility/link.svg" alt="">
+            <label for="link-toggle" class="toggle">
+                <input name="link-toggle" id="link-toggle" hidden type="checkbox" onchange="linkOutlineChange()">
+                <span></span>
+            </label>
+        </div>
+    </div>
+    <main>
+        <header class="landing">
+            <div class="">
+                <h2>The window to change</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+            </div>
+            <img src="/images/svgs/logo.svg" alt="">
+        </header>
+        <article class="future">
+            <h2>Step into the future</h2>
+            <p>Join us as we shape a new future for vision.</p>
+            <iframe loading="lazy" src="https://www.youtube.com/embed/v9ejT8FO-7I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+        <article class="understanding">
+            <img loading="lazy" src="/images/understanding.png" alt="">
+            <div class="">
+                <h2>Realnost bolesti mrežnjače</h2>
+                <p>Bolest mrežnjače je rastući problem javnog zdravlja sa potencijalno razornim efektima na ljude koji je doživljavaju, njihove porodice i voljene.<br><br>Dok su trenutne mogućnosti za lečenje smanjile gubitak vida, znamo da se više može i treba učiniti kako bi se smanjio značajan teret lečenja i gubitak efikasnosti tokom vremena.</p>
+                <button>Saznajte više</button>
+            </div>
+        </article>
+        <section class="columns">
+            <h4>Your vision is precious which is why we do all we can to protect it.</h4>
+            <p>Our commitment to vision is guided by three key principles.</p>
+            <div>
+                <article>
+                    <img src="/images/svgs/column/1.svg" alt="">
+                    <h3>Lorem Ipsum is simply dummy text </h3>
+                    <p>To make a type specimen book. It has survived not only five centuries, but also the leap into electronic</p>
+                    <a href="">Saznaj više</a>
+                </article>
+                <article>
+                    <img src="/images/svgs/column/2.svg" alt="">
+                    <h3>Lorem Ipsum is simply dummy text </h3>
+                    <p>To make a type specimen book. It has survived not only five centuries, but also the leap into electronic</p>
+                    <a href="">Saznaj više</a>
+                </article>
+                <article>
+                    <img src="/images/svgs/column/3.svg" alt="">
+                    <h3>Lorem Ipsum is simply dummy text </h3>
+                    <p>To make a type specimen book. It has survived not only five centuries, but also the leap into electronic</p>
+                    <a href="">Saznaj više</a>
+                </article>
+            </div>
+            <h2>Lorem Ipsum is simply dummy text of the printing</h2>
+        </section>
+        <section class="window">
+            <img loading="lazy" src="/images/window.jpg" alt="">
+            <div>
+                <h2>The window to change</h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    <br><br>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                </p>
+            </div>
+        </section>
+        <section class="register">
+            <h2>Register your interest</h2>
+            <p>Learn more about The Window to Change and receive regular updates on our work.</p>
+            <div class="grid">
+                <p>By registering your interest, you agree to receive communications from Roche Ophthalmology, including website updates.</p>
+                <p>We are collecting this information to personalise your experience, and we commit to not share your data with third parties.</p>
+            </div>
+            <div class="form">
+                <p>All fields are required</p>
+                <input type="text" placeholder="Ime">
+                <input type="text" placeholder="Prezime">
+                <input type="text" placeholder="E-mail">
+                <div class="checks">
+                    <label for="privacy">
+                        <input name="privacy" id="privacy" type="checkbox" hidden>
+                        <span class="checkbox"></span>
+                        I have read the privacy policy
+                    </label>
+                    <label for="newsletter">
+                        <input name="newsletter" id="newsletter" type="checkbox" hidden>
+                        <span class="checkbox"></span>
+                        I would like to receive emails from Roche
+                    </label>
+                </div>
+                <button>Registrovati</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </footer>
+    <script src="/js/accessibility.js" defer></script>
+</body>
+</html>
