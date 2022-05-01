@@ -1,4 +1,5 @@
 const body = document.querySelector('body');
+const accessibility = document.querySelector('.accessibility-block');
 
 let contrastIndex = 0;
 const contrasts = ['light', 'dark', 'gray', 'inverted'];
@@ -61,3 +62,7 @@ function linkOutlineChange() {
     body.classList.toggle('link-outlined');
 }
 
+function toggleAccessibility(value) {
+    if(value) accessibility.classList.remove('hide');
+    else accessibility.classList.add('hide')
+}

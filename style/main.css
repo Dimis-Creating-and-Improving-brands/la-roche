@@ -53,9 +53,14 @@ nav > div > a > img {
   position: fixed;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
+  -webkit-box-shadow: -5px 0px 15px 0px rgba(85, 85, 85, 0.77);
+  box-shadow: -5px 0px 15px 0px rgba(85, 85, 85, 0.33);
 }
 .accessibility-block p {
   font-size: 18px !important;
+}
+.accessibility-block p:hover {
+  cursor: pointer;
 }
 .accessibility-block .option {
   display: flex;
@@ -127,6 +132,9 @@ nav > div > a > img {
 }
 .accessibility-block .option.with-toggle img {
   margin-left: 0;
+}
+.accessibility-block.hide {
+  display: none;
 }
 .accessibility-block {
   background-color: var(--background-light);

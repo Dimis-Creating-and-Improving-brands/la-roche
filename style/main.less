@@ -55,9 +55,13 @@ nav {
   position: fixed;
   border-top-left-radius: .5rem;
   border-bottom-left-radius: .5rem;
-
+  -webkit-box-shadow: -5px 0px 15px 0px rgba(85,85,85,0.77);
+  box-shadow: -5px 0px 15px 0px rgba(85,85,85,0.33);
   p {
     font-size: 18px !important;
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .option {
@@ -134,6 +138,9 @@ nav {
         margin-left: 0;
       }
     }
+  }
+  &.hide {
+    display: none;
   }
 }
 .accessibility-block {
