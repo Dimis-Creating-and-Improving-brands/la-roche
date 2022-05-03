@@ -151,6 +151,7 @@
 .window div {
   width: 80rem;
   margin-inline: auto;
+  padding-inline: 2rem;
 }
 .window h2,
 .window p {
@@ -174,7 +175,7 @@
   margin-bottom: 2.5rem;
 }
 .register .grid {
-  width: 45rem;
+  width: 55rem;
   display: grid;
   max-width: 100%;
   text-align: left;
@@ -186,7 +187,7 @@
   font-style: italic;
 }
 .register .form {
-  width: 45rem;
+  width: 55rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -228,6 +229,9 @@
   display: block;
   border-radius: 50%;
 }
+.register .form .checks label:first-of-type {
+  margin-right: 2rem;
+}
 .register .form button {
   padding: 0.5rem 3rem;
 }
@@ -249,5 +253,62 @@
 }
 .register .checkbox::after {
   background-color: var(--color-accent);
+}
+@media (max-width: 1600px) {
+  .window img {
+    object-position: 40%;
+  }
+}
+@media (max-width: 1279px) {
+  .landing {
+    flex-direction: column;
+  }
+  .landing > div {
+    text-align: center;
+    margin: auto auto 3rem auto;
+    max-width: 100%;
+  }
+  .landing img {
+    margin-bottom: 5rem;
+    max-width: 100%;
+  }
+  .understanding {
+    text-align: center;
+    align-items: center;
+    padding-bottom: 3rem;
+    flex-direction: column;
+  }
+  .understanding img {
+    max-width: 100%;
+    margin-inline: auto;
+    margin-bottom: 3rem;
+  }
+  .columns > div {
+    width: 25rem;
+    grid-template-columns: 1fr;
+    grid-row-gap: 4rem;
+  }
+  .columns > div article > p {
+    margin-bottom: 2rem;
+  }
+  .register .grid {
+    max-width: 100%;
+    text-align: center;
+    grid-row-gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+  .register .form {
+    max-width: 100%;
+  }
+  .register .form input {
+    max-width: 100%;
+  }
+  .register .form .checks {
+    flex-direction: column;
+  }
+  .register .form .checks label {
+    margin-right: auto;
+    margin-bottom: 2rem;
+  }
 }
 /*# sourceMappingURL=index.css.map */
