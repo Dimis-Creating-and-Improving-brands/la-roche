@@ -167,4 +167,66 @@ nav > div > a > img {
 .accessibility-block .toggle input:checked + span {
   background-color: var(--color-accent);
 }
+footer {
+  padding: 5rem 2rem;
+}
+footer > div {
+  width: 90rem;
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  margin-inline: auto;
+  flex-direction: column;
+}
+footer > div > div:first-of-type {
+  margin-bottom: 1rem;
+}
+footer > div > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer > div > div > div {
+  max-width: 100%;
+}
+footer > div > div > div > div {
+  margin-bottom: 2rem;
+}
+footer > div > div > div:first-of-type {
+  flex: 0 0 60rem;
+}
+footer > div > div > div:first-of-type div {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer > div > div > div:first-of-type a {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+footer > div > div > div:first-of-type p:first-of-type {
+  margin-bottom: 1.5rem;
+}
+footer > div > div > div:last-of-type p {
+  margin-bottom: 5rem;
+}
+footer > div > div > div:last-of-type div {
+  display: flex;
+}
+footer > div > div > div:last-of-type div a {
+  margin-right: 1rem;
+}
+footer > div a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer {
+  background: var(--background-light);
+}
+footer a {
+  color: var(--color-accent);
+}
+footer p {
+  color: #21212180;
+}
 /*# sourceMappingURL=main.css.map */
