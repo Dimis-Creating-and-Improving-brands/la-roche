@@ -193,7 +193,7 @@ footer > div > div > div > div {
   margin-bottom: 2rem;
 }
 footer > div > div > div:first-of-type {
-  flex: 0 0 60rem;
+  width: 60rem;
 }
 footer > div > div > div:first-of-type div {
   display: flex;
