@@ -237,3 +237,32 @@ footer {
     color: #21212180;
   }
 }
+
+@media(max-width: 1279px) {
+  footer {
+    > div {
+      > div {
+        text-align: center;
+        align-items: center;
+      }
+      > div:first-of-type {
+        margin-bottom: 3rem;
+      }
+      > div:last-of-type {
+        flex-direction: column;
+        > div > div:first-of-type {
+          align-items: center;
+          justify-content: center;
+        }
+        > div a:last-of-type {
+          margin-right: 0;
+        }
+        > div:last-of-type {
+          p {
+            margin-block: 4rem 2rem;
+          }
+        }
+      }
+    }
+  }
+}

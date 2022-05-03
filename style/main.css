@@ -229,4 +229,26 @@ footer a {
 footer p {
   color: #21212180;
 }
+@media (max-width: 1279px) {
+  footer > div > div {
+    text-align: center;
+    align-items: center;
+  }
+  footer > div > div:first-of-type {
+    margin-bottom: 3rem;
+  }
+  footer > div > div:last-of-type {
+    flex-direction: column;
+  }
+  footer > div > div:last-of-type > div > div:first-of-type {
+    align-items: center;
+    justify-content: center;
+  }
+  footer > div > div:last-of-type > div a:last-of-type {
+    margin-right: 0;
+  }
+  footer > div > div:last-of-type > div:last-of-type p {
+    margin-block: 4rem 2rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */
