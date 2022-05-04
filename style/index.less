@@ -17,18 +17,33 @@
   }
 }
 .landing {
-  background-color: var(--color-primary);
+  background-color: #C4C4C4;
   h2, p > {
     color: var(--color-contast);
   }
 }
+body.dark .landing {
+  background-color: #212121;
+}
 
 .future {
-  padding: 6.25rem 2rem;
+  z-index: 1;
   display: flex;
+  overflow: hidden;
   align-items: center;
   flex-direction: column;
+  padding: 6.25rem 2rem;
   justify-content: center;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: contain;
+    z-index: -1;
+  }
 
   h2 {
     margin-bottom: 1rem;
@@ -38,8 +53,8 @@
   }
 
   iframe {
-    width: 75rem;
-    height: 45rem;
+    width: 69rem;
+    height: 39rem;
     max-width: 100%;
     max-height: 60vw;
   }
@@ -48,6 +63,12 @@
   background-color: var(--color-contast);
   h2, p {
     color: var(--color-primary);
+  }
+}
+body.dark .future {
+  background-color: #212121;
+  img {
+    display: none;
   }
 }
 
@@ -83,6 +104,12 @@
   button {
     background-color: var(--color-primary);
     color: var(--color-contast);
+  }
+}
+body.dark .understanding {
+  background-color: #212121;
+  button {
+    color: #212121;
   }
 }
 
@@ -122,12 +149,15 @@
 }
 .columns {
   background-color: var(--color-contast);
-  h2, h3, p {
+  h2, h3, h4, p {
     color: var(--color-primary);
   }
   a {
     color: var(--color-accent);
   }
+}
+body.dark .columns {
+  background-color: #212121;
 }
 
 .window {
@@ -256,6 +286,13 @@
     &::after {
       background-color: var(--color-accent);
     }
+  }
+}
+body.dark .register {
+  background-color: #212121;
+  input, .checkbox {
+    background-color: #000 !important;
+    border-color: #000 !important;
   }
 }
 

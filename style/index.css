@@ -17,18 +17,32 @@
   width: 35rem;
 }
 .landing {
-  background-color: var(--color-primary);
+  background-color: #C4C4C4;
 }
 .landing h2,
 .landing p {
   color: var(--color-contast);
 }
+body.dark .landing {
+  background-color: #212121;
+}
 .future {
-  padding: 6.25rem 2rem;
+  z-index: 1;
   display: flex;
+  overflow: hidden;
   align-items: center;
   flex-direction: column;
+  padding: 6.25rem 2rem;
   justify-content: center;
+  position: relative;
+}
+.future img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: contain;
+  z-index: -1;
 }
 .future h2 {
   margin-bottom: 1rem;
@@ -37,8 +51,8 @@
   margin-bottom: 5rem;
 }
 .future iframe {
-  width: 75rem;
-  height: 45rem;
+  width: 69rem;
+  height: 39rem;
   max-width: 100%;
   max-height: 60vw;
 }
@@ -48,6 +62,12 @@
 .future h2,
 .future p {
   color: var(--color-primary);
+}
+body.dark .future {
+  background-color: #212121;
+}
+body.dark .future img {
+  display: none;
 }
 .understanding {
   min-height: 34rem;
@@ -83,6 +103,12 @@
 .understanding button {
   background-color: var(--color-primary);
   color: var(--color-contast);
+}
+body.dark .understanding {
+  background-color: #212121;
+}
+body.dark .understanding button {
+  color: #212121;
 }
 .columns {
   display: flex;
@@ -124,11 +150,15 @@
 }
 .columns h2,
 .columns h3,
+.columns h4,
 .columns p {
   color: var(--color-primary);
 }
 .columns a {
   color: var(--color-accent);
+}
+body.dark .columns {
+  background-color: #212121;
 }
 .window {
   width: 100%;
@@ -256,6 +286,14 @@
 }
 .register .checkbox::after {
   background-color: var(--color-accent);
+}
+body.dark .register {
+  background-color: #212121;
+}
+body.dark .register input,
+body.dark .register .checkbox {
+  background-color: #000 !important;
+  border-color: #000 !important;
 }
 @media (max-width: 1600px) {
   .window img {

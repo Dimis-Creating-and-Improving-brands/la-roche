@@ -6,7 +6,7 @@ nav {
   width: 100vw;
   height: 5.5rem;
   padding: .5rem 2rem;
-  background-color: var(--color-primary);
+  background-color: #212121;
   box-sizing: border-box;
   > div {
     height: 4.5rem;
@@ -36,7 +36,7 @@ nav {
   position: fixed;
   z-index: 100;
   right: -3rem;
-  top: 20rem;
+  top: 15rem;
   font-size: 1.25rem;
   border-top-left-radius: .5rem;
   border-top-right-radius: .5rem;
@@ -48,7 +48,7 @@ nav {
 
 .accessibility-block{
   right: 0;
-  top: 17rem;
+  top: 13rem;
   z-index: 101;
   //width: 10rem;
   padding: 1rem;
@@ -149,7 +149,7 @@ nav {
     background-color: var(--color-contast);
   }
   .plus, .minus  {
-    background-color: var(--color-primary);
+    background-color: #212121;
     color: var(--color-contast);
     &:before, &:after {
       background-color: var(--color-contast);
@@ -162,7 +162,7 @@ nav {
     background-color: var(--background-light);
     span {
       color: var(--color-contast);
-      background-color: var(--color-primary);
+      background-color: #212121;
     }
 
     input:checked + span {
@@ -235,6 +235,21 @@ footer {
   }
   p {
     color: #21212180;
+  }
+  .light {
+    display: none;
+  }
+}
+body.dark footer {
+  background-color: #212121;
+  p {
+    color: #FFFFFF80;
+  }
+  .light {
+    display: initial;
+  }
+  .dark {
+    display: none;
   }
 }
 

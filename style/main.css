@@ -6,7 +6,7 @@ nav {
   width: 100vw;
   height: 5.5rem;
   padding: 0.5rem 2rem;
-  background-color: var(--color-primary);
+  background-color: #212121;
   box-sizing: border-box;
 }
 nav > div {
@@ -36,7 +36,7 @@ nav > div > a > img {
   position: fixed;
   z-index: 100;
   right: -3rem;
-  top: 20rem;
+  top: 15rem;
   font-size: 1.25rem;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
@@ -47,7 +47,7 @@ nav > div > a > img {
 }
 .accessibility-block {
   right: 0;
-  top: 17rem;
+  top: 13rem;
   z-index: 101;
   padding: 1rem;
   position: fixed;
@@ -144,7 +144,7 @@ nav > div > a > img {
 }
 .accessibility-block .plus,
 .accessibility-block .minus {
-  background-color: var(--color-primary);
+  background-color: #212121;
   color: var(--color-contast);
 }
 .accessibility-block .plus:before,
@@ -162,7 +162,7 @@ nav > div > a > img {
 }
 .accessibility-block .toggle span {
   color: var(--color-contast);
-  background-color: var(--color-primary);
+  background-color: #212121;
 }
 .accessibility-block .toggle input:checked + span {
   background-color: var(--color-accent);
@@ -228,6 +228,21 @@ footer a {
 }
 footer p {
   color: #21212180;
+}
+footer .light {
+  display: none;
+}
+body.dark footer {
+  background-color: #212121;
+}
+body.dark footer p {
+  color: #FFFFFF80;
+}
+body.dark footer .light {
+  display: initial;
+}
+body.dark footer .dark {
+  display: none;
 }
 @media (max-width: 1279px) {
   footer > div > div {
