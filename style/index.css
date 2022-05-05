@@ -104,11 +104,23 @@ body.dark .future img {
   background-color: var(--color-primary);
   color: var(--color-contast);
 }
+.understanding .light {
+  display: initial;
+}
+.understanding .dark {
+  display: none;
+}
 body.dark .understanding {
   background-color: #212121;
 }
 body.dark .understanding button {
   color: #212121;
+}
+body.dark .understanding .light {
+  display: none;
+}
+body.dark .understanding .dark {
+  display: initial;
 }
 .columns {
   display: flex;
