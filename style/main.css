@@ -30,6 +30,9 @@ nav > div > a > img {
   height: 2.5rem;
   object-fit: contain;
 }
+nav > div img {
+  height: 3rem;
+}
 .accessibility {
   padding: 1rem 1.25rem;
   background-color: var(--color-accent);
@@ -184,10 +187,11 @@ footer > div > div:first-of-type {
 footer > div > div {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 footer > div > div > div {
   max-width: 100%;
+  text-align: center;
 }
 footer > div > div > div > div {
   margin-bottom: 2rem;
@@ -207,13 +211,11 @@ footer > div > div > div:first-of-type p:first-of-type {
   margin-bottom: 1.5rem;
 }
 footer > div > div > div:last-of-type p {
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
 }
 footer > div > div > div:last-of-type div {
   display: flex;
-}
-footer > div > div > div:last-of-type div a {
-  margin-right: 1rem;
+  justify-content: center;
 }
 footer > div a {
   display: flex;

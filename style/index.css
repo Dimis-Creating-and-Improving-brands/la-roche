@@ -1,20 +1,18 @@
 .landing {
-  min-height: 39rem;
+  height: 42rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-inline: 2rem;
 }
-.landing > div {
-  width: 35rem;
-  margin-right: 2.5rem;
-  padding-block: 1rem;
+.landing .image {
+  height: 100%;
+  object-fit: cover;
+  max-width: 60vw;
 }
-.landing > div h2 {
-  margin-bottom: 2rem;
-}
-.landing > img {
-  width: 35rem;
+.landing .logo {
+  margin-left: 7rem;
+  height: 14rem;
+  margin-right: auto;
 }
 .landing {
   background-color: #C4C4C4;
@@ -70,19 +68,21 @@ body.dark .future img {
   display: none;
 }
 .understanding {
-  min-height: 34rem;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .understanding img {
   max-height: 34rem;
-  object-fit: contain;
-  margin-right: 2.25rem;
+  margin-right: 3rem;
+  width: 55%;
+  object-fit: cover;
 }
 .understanding > div {
   padding: 1rem;
-  max-width: 44rem;
+  max-width: 42rem;
+  margin-right: auto;
 }
 .understanding > div h2 {
   margin-bottom: 2rem;
@@ -157,6 +157,9 @@ body.dark .understanding .dark {
 .columns > div article p {
   margin-bottom: 3.5rem;
 }
+.columns > div article a {
+  margin-top: auto;
+}
 .columns {
   background-color: var(--color-contast);
 }
@@ -214,7 +217,7 @@ body.dark .columns {
   padding: 5rem 2rem;
 }
 .register > h2 {
-  margin-bottom: 2.25rem;
+  margin-bottom: 5rem;
 }
 .register > p {
   margin-bottom: 2.5rem;
@@ -232,7 +235,7 @@ body.dark .columns {
   font-style: italic;
 }
 .register .form {
-  width: 55rem;
+  width: 31rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -240,12 +243,17 @@ body.dark .columns {
 .register .form p {
   margin-bottom: 1.25rem;
 }
-.register .form input {
+.register .form input,
+.register .form textarea {
   width: 31rem;
   border: 1px solid;
   margin-bottom: 1rem;
   padding: 0.75rem 1.5rem;
   box-sizing: border-box;
+}
+.register .form textarea {
+  height: 10rem;
+  resize: none;
 }
 .register .form .checks {
   width: 100%;
@@ -278,7 +286,10 @@ body.dark .columns {
   margin-right: 2rem;
 }
 .register .form button {
+  display: flex;
+  align-items: center;
   padding: 0.5rem 3rem;
+  margin-top: 3rem;
 }
 .register {
   background-color: var(--background-light);
@@ -308,22 +319,28 @@ body.dark .register .checkbox {
   border-color: #000 !important;
 }
 @media (max-width: 1600px) {
+  .landing {
+    height: 38rem;
+  }
+  .landing .image {
+    object-position: right;
+  }
   .window img {
     object-position: 40%;
   }
 }
+@media (max-width: 1440px) {
+  .landing {
+    height: 36rem;
+  }
+  .landing .logo {
+    margin-left: 3rem;
+    height: 11rem;
+  }
+}
 @media (max-width: 1279px) {
   .landing {
-    flex-direction: column;
-  }
-  .landing > div {
-    text-align: center;
-    margin: auto auto 3rem auto;
-    max-width: 100%;
-  }
-  .landing img {
-    margin-bottom: 5rem;
-    max-width: 100%;
+    height: 32rem;
   }
   .understanding {
     text-align: center;
@@ -333,8 +350,11 @@ body.dark .register .checkbox {
   }
   .understanding img {
     max-width: 100%;
-    margin-inline: auto;
+    margin-right: auto;
     margin-bottom: 3rem;
+  }
+  .understanding div {
+    margin-left: auto;
   }
   .columns > div {
     width: 25rem;
@@ -371,6 +391,13 @@ body.dark .register .checkbox {
   }
 }
 @media (max-width: 1024px) {
+  .landing {
+    height: 28rem;
+  }
+  .landing .logo {
+    height: 8rem;
+    margin-left: 2rem;
+  }
   .window {
     height: auto;
     min-height: 100vh;
@@ -395,6 +422,23 @@ body.dark .register .checkbox {
   .window div p {
     width: 30em;
     max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .landing {
+    height: auto;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .landing .image {
+    width: 120%;
+    height: auto;
+    object-fit: cover;
+    max-width: unset;
+    max-height: 38rem;
+  }
+  .landing .logo {
+    margin: 5rem auto;
   }
 }
 /*# sourceMappingURL=index.css.map */
