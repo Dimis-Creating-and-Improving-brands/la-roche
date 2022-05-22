@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>La Roche - Home</title>
+
+    <!--  Links  -->
+    <link rel="stylesheet" href="style/presets.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/senile-makule-degeneration.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <div>
+<!--                <img class="button" src="assets/images/svgs/hamburger.svg" alt="">-->
+                <a href=""><img src="assets/images/logo-dark.png" alt=""></a>
+            </div>
+            <a href=""><img src="assets/images/svgs/logo.svg" alt="" style="padding-block: .25rem; box-sizing: border-box"></a>
+        </div>
+    </nav>
+    <div class="accessibility" onclick="toggleAccessibility(true)">Accessibility</div>
+    <div class="accessibility-block hide">
+        <p onclick="toggleAccessibility(false)">✕</p>
+        <div class="option">
+            <div onclick="decrementContrast()" class="minus"></div>
+            <img src="assets/images/svgs/accessibility/contrast.svg" alt="">
+            <div onclick="incrementContrast()" class="plus"></div>
+        </div>
+        <div class="option">
+            <div onclick="decrementSize()" class="minus"></div>
+            <img src="assets/images/svgs/accessibility/text.svg" alt="">
+            <div onclick="incrementSize()" class="plus"></div>
+        </div>
+        <div class="option">
+            <div onclick="decrementSpacing()" class="minus"></div>
+            <img src="assets/images/svgs/accessibility/spacing.svg" alt="">
+            <div onclick="incrementSpacing()" class="plus"></div>
+        </div>
+        <div class="option with-toggle">
+            <img src="assets/images/svgs/accessibility/link.svg" alt="">
+            <label for="link-toggle" class="toggle">
+                <input name="link-toggle" id="link-toggle" hidden type="checkbox" onchange="linkOutlineChange()">
+                <span></span>
+            </label>
+        </div>
+    </div>
+    <main>
+        <header class="landing">
+            <h1>Senilna degeneracija makule</h1>
+            <img class="image" src="assets/images/amd/landing.png" alt="">
+        </header>
+        <article class="about">
+            <h2>O bolesti <sup>1</sup></h2>
+            <p>
+                Bolest mrežnjače je rastući problem javnog zdravlja sa potencijalno razornim efektima na ljude koji je doživljavaju, njihove porodice i voljene.
+                <br><br>
+                Dok su trenutne mogućnosti za lečenje smanjile gubitak vida, znamo da se više može i treba učiniti kako bi se smanjio značajan teret lečenja i gubitak efikasnosti tokom vremena.
+            </p>
+            <img src="assets/images/svgs/ellipse-lower.svg" alt="">
+        </article>
+        <article class="types">
+            <h2>Postoje dve vrste senilne degeneracije makule: </h2>
+            <div class="flex">
+                <div>
+                    <div class="circle">
+                        <img src="assets/images/svgs/circle-border.svg" alt="">
+                        <h2>Suva <br>AMD</h2>
+                    </div>
+                    <p>Suva senilna degeneracija makule</p>
+                </div>
+                <div>
+                    <div class="circle">
+                        <img src="assets/images/svgs/circle-border.svg" alt="">
+                        <h2>Vlažna <br>AMD</h2>
+                    </div>
+                    <p>Vlažna senilna degeneracija makule</p>
+                </div>
+            </div>
+            <p>Važno je napomenuti da neće svi nastaviti da razvijaju vlažni AMD.</p>
+            <div class="divider"></div>
+            <h2>Suva senilna degeneracija makule  </h2>
+            <p>Važno je napomenuti da neće svi nastaviti da razvijaju vlažni AMD.</p>
+            <h2>Kako se razvija suvi AMD?</h2>
+            <div class="flex">
+                <div>
+                    <img src="assets/images/amd/eye-normal.png" alt="">
+                    <p>Suva senilna degeneracija makule je rani stadijum bolesti i napreduje polako tokom vremena. Kod suve forme, u zadnjem delu oka, na mestu koje nazivamo žuta mrlja (makula) se nagomilavaju nepotrebne materije. </p>
+                </div>
+                <div>
+                    <img src="assets/images/amd/eye-sick.png" alt="">
+                    <p>Upravo te nagomilane materije mogu s vremenom da dovedu do gubitka vida</p>
+                </div>
+            </div>
+        </article>
+        <article class="wet-amd">
+            <div class="flex">
+                <div>
+                    <h2>Vlažna AMD</h2>
+                    <p>Vlažna senilna degeneracija makule, poznata i kao neovaskularna senilna degeneracija makule, nastaje kada u oku počnu da se razvijaju abnormalni krvni sudovi.</p>
+                </div>
+                <div class="circle">
+                    <img src="assets/images/svgs/circle-border.svg" alt="">
+                    <h2>10%</h2>
+                    <p>ljudi sa suvim AMD će doživeti vlažni AMD</p>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="flex">
+                    <img src="assets/images/amd/eye-normal.png" alt="">
+                    <img src="assets/images/amd/eye-sick.png" alt="">
+                </div>
+                <p>Ovi mali krvni sudovi mogu da počnu da cure i oštećuju vid, sa tendencijom brzog napredovanja. <br><br>U oko 10% slučajeva, suva senilna makularna degeneracija prelazi u vlažnu formu.</p>
+            </div>
+        </article>
+        <div class="spacer">
+            <article class="info with-ellipse">
+                <div class="ellipse"></div>
+                <div class="border"></div>
+                <div class="content">
+                    <h2>Simptomi <sup>2, 3</sup></h2>
+                    <p>Simptomi rane senilne degeneracije makule se mogu razlikovati od osobe do osobe, međutim najčešće se može javiti kombinacija nekih od sledećih simptoma: </p>
+                    <div class="flex">
+                        <div>
+                            <img src="assets/images/amd/symptoms/1.svg" alt="">
+                            <h3>Zama<wbr>gljeni vid</h3>
+                            <p>Zamagljeni vid - Centar vida može da postane zamrljan ili zamagljen.</p>
+                        </div>
+                        <div>
+                            <img src="assets/images/amd/symptoms/2.svg" alt="">
+                            <h3>Tamne tačke </h3>
+                            <p>U vidom polju se mogu javiti tamne mrlje, zbog čega je teško jasno videti pravo ispred sebe.</p>
+                        </div>
+                        <div>
+                            <img src="assets/images/amd/symptoms/3.svg" alt="">
+                            <h3>Problem u razli<wbr>kovnju boja</h3>
+                            <p>Način na koji se vide boje može da se promeni, a neke boje mogu da izgledaju manje izražene nego ranije.</p>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <p>Način na koje se vide boje može da se promeni, a neke boje mogu da izgledaju manje izražene nego ranije.</p>
+                    <div class="flex">
+                        <div>
+                            <img src="assets/images/amd/symptoms/4.svg" alt="">
+                            <h3>Talasaste ivice i linije</h3>
+                            <p>Prave linije mogu da izgledaju talasasto, savijeno ili iskrivljeno.</p>
+                        </div>
+                        <div>
+                            <img src="assets/images/amd/symptoms/5.svg" alt="">
+                            <h3>Otežano obavljanje svakodnevnih poslova </h3>
+                            <p>Otežana vidljivost sitnih detalja, poput čitanja knjige, vožnje ili gledanje TV-a.</p>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <h2>Faktori rizika <sup>4,5</sup></h2>
+                    <p>Kod senilne degeneracije makule možemo govoriti o kombinaciji faktora rizika:</p>
+                    <div class="flex">
+                        <div>
+                            <img src="assets/images/amd/risk-factors/1.svg" alt="">
+                            <h3>Godine starosti</h3>
+                            <p>Rizik od senilne degeneracije makule raste s godinama. Prema statistici, jedna trećina ljudi starijih od 75 godina živi sa senilnom degeneracijom makule.</p>
+                        </div>
+                        <div>
+                            <img src="assets/images/amd/risk-factors/2.svg" alt="">
+                            <h3>Genetska predispozicija </h3>
+                            <p>Ukoliko je neko u vašoj bliskoj porodici imao senilnu degeneraciju makule, postoji veća verovatnoća da ćete je i vi dobiti.</p>
+                        </div>
+                        <div>
+                            <img src="assets/images/amd/risk-factors/3.svg" alt="">
+                            <h3>Prekomerna telesna masa /
+                                Visok indeks telesne mase</h3>
+                            <p>Ukoliko je indeks telesne mase preko 30, veća je verovatnoća da ćete oboleti od ove bolesti.</p>
+                        </div>
+                        <div>
+                            <img src="assets/images/amd/risk-factors/4.svg" alt="">
+                            <h3>Pušenje</h3>
+                            <p></p>
+                        </div>
+                        <div>
+                            <img src="assets/images/amd/risk-factors/5.svg" alt="">
+                            <h3>Pol</h3>
+                            <p>Žene imaju veći rizik od muškaraca zbog dužeg očekivanog trajanja života.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="affect">
+            <h2>Kako AMD utiče na vid?</h2>
+            <div class="image-toggle flex">
+                <div class="flex" onclick="this.parentNode.parentNode.classList.remove('active')">
+                    <p>Zdravo oko</p>
+                    <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.589844 10.59L5.16984 6L0.589844 1.41L1.99984 0L7.99984 6L1.99984 12L0.589844 10.59Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="flex" onclick="this.parentNode.parentNode.classList.add('active')">
+                    <svg width="8" height="12" viewBox="0 0 8 12" style="transform: rotate(180deg)" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.589844 10.59L5.16984 6L0.589844 1.41L1.99984 0L7.99984 6L1.99984 12L0.589844 10.59Z" fill="white"/>
+                    </svg>
+                    <p>Oko sa AMD</p>
+                </div>
+            </div>
+            <div class="titles">
+                <h2 class="healthy">Zdravo oko</h2>
+                <h2 class="unhealthy">Oko sa AMD</h2>
+            </div>
+            <div class="images">
+                <img src="assets/images/amd/healthy-view.png" class="healthy" alt="">
+                <img src="" class="unhealthy" alt="">
+            </div>
+            <p>Od krucijalnog je značaja da pratite svoj vid. Ono što vam može pomoći u tome je Amslerova rešetka – jednostavan test za oko koji možete uraditi bilo da ste aktivni van kuće ili ste u udobnosti sopstvenog doma. Za nekoga sa jasnim vidom, Amslerova rešetka izgleda kao milimetarski papir. Tamne linije prave kvadrate, a u centru se nalazi jedna crna tačka. Osobama koje pate od vlažne AMD, ova rešetka može izgledati talasasto ili da linije budu iskrivljene. Takođe, osoba sa vlažnom AMD može da vidi i tamne i zamagljene delove, posebno u centralnom delu vidnog polja.</p>
+        </div>
+        <div class="how-it-works">
+            <h2>Kako to funkcioniše?</h2>
+            <div class="flex">
+                <div class="col">
+                    <h2>Jasan vid</h2>
+                    <p>Ovo je Amslerova rešetka. <br> Za nekoga sa jasnim vidom, Amslerova rešetka izgleda kao milimetarski papir. Tamne linije prave kvadrate, a u centru se nalazi jedna crna tačka.</p>
+                    <img src="assets/images/amd/grid/healthy.png" alt="">
+                </div>
+                <div class="divider"></div>
+                <div class="col">
+                    <h2>Nejasan vid</h2>
+                    <p>Nekome ko pati od vlažne AMD, ova rešetka može da izgleda talasasto, ili da linije budu iskrivljene. Može da vidi i tamne i zamagljene delove, posebno u centralnom delu vidnog polja.</p>
+                    <img src="assets/images/amd/grid/unhealthy.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="references">
+            <h2>Reference</h2>
+            <div class="flex">
+                <div>
+                    <p>1. Bright Focus Foundation. Age-Related Macular Degeneration: Facts & Figures. [Internet; cited March 2021]. Available from: <a href="https://www.brightfocus.org/macular/article/age-related-macular-facts-figures">https://<wbr>www.brightfocus.org/macular/article/age-related-macular-facts-figures</a></p>
+                    <p>2. Bright Focus Foundation. Macular Degeneration Essential Facts. [Internet; cited March 2021]. Available from: <a href="http://www.brightfocus.org/macular/news/macular-essential-facts">http://<wbr>www.brightfocus.org/macular/news/macular-essential-facts</a></p>
+                    <p>3. Kellogg Eye Center. AMD. [Internet; cited March 2021]. Available from: <a href="http://www.kellogg.umich.edu/patientcare/conditions/amd.html">http://<wbr>www.kellogg.umich.edu/patientcare/conditions/amd.html</a></p>
+                </div>
+                <div>
+                    <p>4. National Eye Institute. Facts About Age-Related Macular Degeneration. [Internet; cited March 2021]. Available from:<a href="https://nei.nih.gov/health/maculardegen/armd_facts">https://<wbr>nei.nih.gov/health/maculardegen/armd_facts</a></p>
+                    <p>5. Bright Focus Foundation. Macular Degeneration Prevention and Risk Factors. [Internet; cited March  2021]. Available from: <a href="http://www.brightfocus.org/macular/prevention-and-risk-factors">http://<wbr>www.brightfocus.org/macular/prevention-and-risk-factors</a></p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div>
+                <div>
+                    <a href="/">
+                        <img style="height: 4rem" class="light" src="assets/images/logo-dark.png" alt="">
+                        <img style="height: 4rem" class="dark" src="assets/images/logo.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <div>
+                        <div class="">
+                            <a href="">About Us</a>
+                            <a href="">Contact Us</a>
+                            <a href="">Legal Statement</a>
+                            <a href="">Privacy Statement</a>
+                            <a href="">Cookie Settings</a>
+                            <a href="">MedInfo</a>
+                        </div>
+                        <p>© 2022 26.05.2022. M-RS-00001394</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="js/accessibility.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+.how-it-works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 2rem 8rem;
+}
+.how-it-works > h2 {
+  margin-bottom: 5rem;
+}
+.how-it-works .divider {
+  width: 0;
+  height: 43rem;
+  border-bottom: 0;
+  border-left: 1px solid #7955A1;
+  margin-inline: 4.5rem;
+  margin-top: auto;
+}
+.how-it-works div > h2 {
+  margin-bottom: 2rem;
+}
+.how-it-works div > p {
+  width: 28rem;
+  max-width: 100%;
+  margin-inline: auto;
+  margin-bottom: 2.5rem;
+}
+.how-it-works div > img {
+  width: 32rem;
+  height: 32rem;
+  object-fit: contain;
+}
+.how-it-works h2,
+.how-it-works p {
+  color: var(--color-primary);
+}
+.references {
+  padding: 4rem 12vw;
+}
+.references h2 {
+  margin-bottom: 2.5rem;
+}
+.references .flex {
+  justify-content: space-between;
+}
+.references .flex div {
+  width: 38rem;
+}
+.references .flex div p {
+  margin-bottom: 2.5rem;
+}
+.references .flex div p:last-of-type {
+  margin-bottom: 0;
+}
+.references {
+  background-color: var(--background-light);
+}
+@media (max-width: 1600px) {
+  .landing {
+    height: 38rem;
+  }
+  .landing .image {
+    object-position: right;
+  }
+}
+@media (max-width: 1440px) {
+  .landing {
+    height: 36rem;
+  }
+  .landing .logo {
+    margin-left: 3rem;
+    height: 11rem;
+  }
+}
+@media (max-width: 1279px) {
+  .landing {
+    height: 32rem;
+  }
+}
+@media (max-width: 1024px) {
+  .landing {
+    height: 28rem;
+  }
+  .landing .logo {
+    height: 8rem;
+    margin-left: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .landing {
+    height: auto;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .landing .image {
+    width: 120%;
+    height: auto;
+    object-fit: cover;
+    max-width: unset;
+    max-height: 38rem;
+  }
+  .landing .logo {
+    margin: 5rem auto;
+  }
+}
+/*# sourceMappingURL=disease-components.css.map */

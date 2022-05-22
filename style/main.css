@@ -171,7 +171,7 @@ nav > div img {
   background-color: var(--color-accent);
 }
 footer {
-  padding: 5rem 2rem;
+  padding: 3.5rem 2rem;
 }
 footer > div {
   width: 90rem;
@@ -207,12 +207,6 @@ footer > div > div > div:first-of-type a {
   margin-right: 1rem;
   margin-bottom: 1rem;
 }
-footer > div > div > div:first-of-type p:first-of-type {
-  margin-bottom: 1.5rem;
-}
-footer > div > div > div:last-of-type p {
-  margin-bottom: 1rem;
-}
 footer > div > div > div:last-of-type div {
   display: flex;
   justify-content: center;
@@ -223,7 +217,7 @@ footer > div a {
   justify-content: center;
 }
 footer {
-  background: var(--background-light);
+  background: var(--color-contast);
 }
 footer a {
   color: var(--color-accent);
