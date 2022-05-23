@@ -295,7 +295,7 @@ body.dark .landing {
   left: 0;
   content: '';
   height: 100%;
-  width: 50%;
+  width: calc(50% + 0.5rem);
   display: block;
   position: absolute;
   background-color: var(--color-accent);
@@ -329,7 +329,7 @@ body.dark .landing {
   display: none;
 }
 .affect.active .image-toggle::after {
-  left: 50%;
+  left: calc(50% - 0.5rem);
 }
 .affect.active .titles h2:first-of-type {
   display: none;
