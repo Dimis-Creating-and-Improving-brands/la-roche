@@ -122,10 +122,10 @@
         <section class="register">
             <h2>Kontakt</h2>
             <div class="form">
-                <input type="text" placeholder="Ime*">
-                <input type="text" placeholder="Prezime*">
-                <input type="text" placeholder="E-mail*">
-                <textarea placeholder="Vaša poruka*"></textarea>
+                <input type="text" id="contact-name" placeholder="Ime*">
+                <input type="text" id="contact-surname" placeholder="Prezime*">
+                <input type="text" id="contact-email" placeholder="E-mail*">
+                <textarea id="contact-message" placeholder="Vaša poruka*"></textarea>
 <!--                <div class="checks">-->
 <!--                    <label for="privacy">-->
 <!--                        <input name="privacy" id="privacy" type="checkbox" hidden>-->
@@ -138,7 +138,7 @@
 <!--                        I would like to receive emails from Roche-->
 <!--                    </label>-->
 <!--                </div>-->
-                <button>Poslati <img style="height: 1em; margin-left: 1em;" src="/assets/images/svgs/arrow.svg" alt=""></button>
+                <button onclick="submitForm()">Poslati <img style="height: 1em; margin-left: 1em;" src="/assets/images/svgs/arrow.svg" alt=""></button>
             </div>
         </section>
         <footer>
@@ -166,5 +166,6 @@
         </footer>
     </main>
     <script src="js/accessibility.js" defer></script>
+    <script src="js/contact.js" defer></script>
 </body>
 </html>
