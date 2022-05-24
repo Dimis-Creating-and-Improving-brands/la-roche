@@ -55,6 +55,7 @@ nav > div img {
 }
 .menu > a {
   margin-bottom: 4rem;
+  font-size: 1.5rem;
 }
 .menu > a:first-of-type {
   margin-top: auto;
