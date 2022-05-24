@@ -1,3 +1,13 @@
+body.dark {
+  --color-primary: #fff;
+  --color-contast: #212121;
+  --background-light: #212121;
+}
+body.dark .accessibility-block {
+  --color-contast: #fff;
+  --color-primary: #212121;
+  --background-light: #f2f2f2;
+}
 .landing {
   height: 42rem;
   display: flex;
@@ -14,6 +24,17 @@
   margin-right: 6rem;
   max-width: 30rem;
 }
+.landing.inverted {
+  flex-direction: row-reverse;
+}
+.landing.inverted h1 {
+  margin-right: auto;
+  margin-left: 6rem;
+  max-width: 30rem;
+}
+.landing.inverted .image {
+  object-position: left;
+}
 .landing {
   background-color: var(--color-primary);
 }
@@ -22,6 +43,9 @@
 }
 body.dark .landing {
   background-color: #212121;
+}
+body.dark .landing h1 {
+  color: var(--color-primary);
 }
 .about {
   width: 100vw;
@@ -43,6 +67,13 @@ body.dark .landing {
   bottom: 0;
   width: 120vw;
   position: absolute;
+}
+.about {
+  background-color: var(--color-contast);
+}
+.about h2,
+.about p {
+  color: var(--color-primary);
 }
 .types {
   display: flex;
@@ -138,7 +169,7 @@ body.dark .landing {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-block: 7rem;
+  padding-block: 3rem;
   padding-inline: 2rem;
   z-index: 2;
   position: relative;
@@ -177,16 +208,18 @@ body.dark .landing {
 .info .content > .flex > div h3 {
   margin-bottom: 1rem;
 }
-.spacer,
-.info {
+.spacer {
   background-color: var(--background-light);
 }
-.spacer h2,
-.info h2,
-.spacer h3,
-.info h3,
-.spacer p,
-.info p {
+.spacer > article {
+  background-color: var(--background-light);
+}
+.spacer .info {
+  background-color: var(--background-light);
+}
+.spacer .info h2,
+.spacer .info h3,
+.spacer .info p {
   color: var(--color-primary);
 }
 .how-it-works {
@@ -250,6 +283,91 @@ body.dark .landing {
 .how-it-works h2,
 .how-it-works p {
   color: var(--color-primary);
+}
+.with-dot {
+  position: relative;
+}
+.with-dot span {
+  top: 0;
+  left: -2rem;
+  height: 1.2em;
+  width: 12px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+}
+.with-dot span::after {
+  content: ' ';
+  display: block;
+  margin: auto;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: var(--color-accent);
+}
+.flex.grid {
+  width: 86rem;
+  flex-wrap: wrap;
+  max-width: calc(100% - 8rem);
+  margin-inline: auto;
+  justify-content: space-between;
+}
+.flex.grid > div {
+  width: 38rem;
+  text-align: left;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+.rvo-types {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.rvo-types > h2 {
+  width: 16em;
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 400;
+}
+.rvo-types .grid {
+  width: 64rem;
+  max-width: calc(100% - 2rem);
+}
+.rvo-types .grid > div {
+  width: 28rem;
+}
+.rvo-types {
+  background-color: var(--background-light);
+}
+.rvo-types h2,
+.rvo-types p {
+  color: var(--color-primary);
+}
+.advices {
+  padding: 5rem 1rem;
+}
+.advices > h2,
+.advices > p {
+  width: 38rem;
+  max-width: 100%;
+  text-align: center;
+  margin-inline: auto;
+}
+.advices h2 {
+  margin-bottom: 1.5rem;
+}
+.advices p {
+  margin-bottom: 4rem;
+}
+.advices .divider {
+  margin-bottom: 4rem;
 }
 .affect {
   display: flex;
@@ -373,6 +491,7 @@ body.dark .landing {
   width: 38rem;
 }
 .references .flex div p {
+  opacity: 0.5;
   margin-bottom: 2.5rem;
 }
 .references .flex div p:last-of-type {
@@ -380,6 +499,11 @@ body.dark .landing {
 }
 .references {
   background-color: var(--background-light);
+}
+.references p,
+.references a,
+.references h2 {
+  color: var(--color-primary);
 }
 @media (max-width: 1600px) {
   .references {
@@ -500,6 +624,21 @@ body.dark .landing {
     width: 32rem;
     margin-top: 3rem;
   }
+  .flex.grid {
+    flex-direction: column;
+    align-items: center;
+    max-width: calc(100% - 2rem);
+  }
+  .flex.grid > div {
+    text-align: left !important;
+  }
+  .flex.grid > div h2,
+  .flex.grid > div p {
+    margin-left: 0 !important;
+  }
+  .rvo-types .flex.grid {
+    flex-direction: row;
+  }
 }
 @media (max-width: 1024px) {
   .types {
@@ -521,6 +660,9 @@ body.dark .landing {
   }
   .how-it-works {
     padding-inline: 1rem;
+  }
+  .rvo-types .flex.grid {
+    flex-direction: column;
   }
 }
 @media (max-width: 768px) {
@@ -544,6 +686,9 @@ body.dark .landing {
   .wet-amd .circle h2 {
     margin-bottom: 0;
   }
+  .with-dot > span {
+    display: none;
+  }
 }
 @media (max-width: 480px) {
   h1 {
@@ -551,4 +696,4 @@ body.dark .landing {
     padding-inline: 2rem;
   }
 }
-/*# sourceMappingURL=senile-makule-degeneration.css.map */
+/*# sourceMappingURL=diseases.css.map */

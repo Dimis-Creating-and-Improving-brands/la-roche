@@ -10,164 +10,165 @@
     <!--  Links  -->
     <link rel="stylesheet" href="style/presets.css">
     <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/senile-makule-degeneration.css">
+    <link rel="stylesheet" href="style/diseases.css">
 </head>
 <body>
-    <nav>
+<nav>
+    <div>
         <div>
-            <div>
-<!--                <img class="button" src="assets/images/svgs/hamburger.svg" alt="">-->
-                <a href=""><img src="assets/images/logo-dark.png" alt=""></a>
+            <!--                <img class="button" src="assets/images/svgs/hamburger.svg" alt="">-->
+            <a href=""><img src="assets/images/logo-dark.png" alt=""></a>
+        </div>
+        <a href=""><img src="assets/images/svgs/logo.svg" alt="" style="padding-block: .25rem; box-sizing: border-box"></a>
+    </div>
+</nav>
+<div class="accessibility" onclick="toggleAccessibility(true)">DRUGAČIJI POGLEDI</div>
+<div class="accessibility-block hide">
+    <p onclick="toggleAccessibility(false)">✕</p>
+    <div class="option">
+        <div onclick="decrementContrast()" class="minus"></div>
+        <img src="assets/images/svgs/accessibility/contrast.svg" alt="">
+        <div onclick="incrementContrast()" class="plus"></div>
+    </div>
+    <div class="option">
+        <div onclick="decrementSize()" class="minus"></div>
+        <img src="assets/images/svgs/accessibility/text.svg" alt="">
+        <div onclick="incrementSize()" class="plus"></div>
+    </div>
+    <div class="option">
+        <div onclick="decrementSpacing()" class="minus"></div>
+        <img src="assets/images/svgs/accessibility/spacing.svg" alt="">
+        <div onclick="incrementSpacing()" class="plus"></div>
+    </div>
+    <div class="option with-toggle">
+        <img src="assets/images/svgs/accessibility/link.svg" alt="">
+        <label for="link-toggle" class="toggle">
+            <input name="link-toggle" id="link-toggle" hidden type="checkbox" onchange="linkOutlineChange()">
+            <span></span>
+        </label>
+    </div>
+</div>
+<main>
+    <header class="landing">
+        <h1>Dijabetesno oboljenje očiju</h1>
+        <img class="image" src="assets/images/dr/landing.png" alt="">
+    </header>
+    <article class="about">
+        <h2>O bolesti <sup>1, 2</sup></h2>
+        <p>
+            Dijabetesno oboljenje očiju uključuje stanja kao što su dijabetesna retinopatija (DR) i dijabetesni makularni edem (DME). Obično su posledica nekontrolisano visokog nivoa šećera u krvi i, ukoliko se ne leče, mogu dovesti do gubitka vida.
+            <br><br>
+            Dijabetesna retinopatija (DR) nastaje tako što visok nivo šećera u krvi začepi male krvne sudove u retini (mrežnjači) zbog čega iz tih krvnih sudova počinje da curi krv ili tečnost što dovodi do otoka i prekida dotoka krvi u neke delove retine. Tokom vremena, DR može da dovede do dijabetesnog makularnog edema (DME), koji nastaje tako što oštećeni krvni sudovi počinju da cure u retinu što dalje može da dovede do nagomilavanja tečnosti u oku koje za posledicu može da ima otok (edem). Kada u makuli nastane edem to dovodi do zamućenog ili oslabljenog vida.
+        </p>
+    </article>
+    <div class="spacer" style="padding-top: 10rem">
+        <article class="info with-ellipse">
+            <div class="ellipse"></div>
+            <div class="border"></div>
+            <div class="content">
+                <h2>Simptomi <sup>3</sup></h2>
+                <p>Kada se radi o dijabetesnom oboljenju očiju, simptomi mogu da izostanu na samom početku bolesti i pojave se tek kada se stanje pogorša. Iako se simptomi mogu razlikovati od osobe do osobe, obično je u pitanju kombinacija nekih od navedenih simptoma:</p>
+                <div class="flex">
+                    <div>
+                        <img src="assets/images/dr/symptoms/1.svg" alt="">
+                        <h3>Gubitak delova vidnog polja </h3>
+                        <p>pojava ‘lebdeće’ tamne mrlje ili linije u vidnom polju.</p>
+                    </div>
+                    <div>
+                        <img src="assets/images/dr/symptoms/2.svg" alt="">
+                        <h3>Problem u razlikovanju boja </h3>
+                        <p>teško razlikovanje svetlih od tamnih nijansi.</p>
+                    </div>
+                    <div>
+                        <img src="assets/images/dr/symptoms/3.svg" alt="">
+                        <h3>Zamućeni vid</h3>
+                        <p>vid može postati manje oštar nego pre.</p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <h2 style="margin-bottom: 5rem">Faktori rizika <sup>4</sup></h2>
+                <div class="flex">
+                    <div>
+                        <img src="assets/images/dr/risk-factors/1.svg" alt="">
+                        <h3>Dijagnoza dijabetesa</h3>
+                        <p>nekontrolisani nivo šećera u krvi ili dijagnoza dijabetesa - posebno kod dugogodišnjih pacijenata, postoji veća verovatnoća razvoja dijabetesne retinopatije ili dijabetesnog makularnog edema.</p>
+                    </div>
+                    <div>
+                        <img src="assets/images/dr/risk-factors/2.svg" alt="">
+                        <h3>Genetska predispozicija</h3>
+                        <p>ukoliko u porodici imate nekog sa DR ili DME, veći je rizik za pojavu nekog od ovih stanja.</p>
+                    </div>
+                    <div>
+                        <img src="assets/images/dr/risk-factors/3.svg" alt="">
+                        <h3>Visok krvni pritisak </h3>
+                        <p>može dovesti do začepljenja malih krvnih sudova u oku.</p>
+                    </div>
+                </div>
             </div>
-            <a href=""><img src="assets/images/svgs/logo.svg" alt="" style="padding-block: .25rem; box-sizing: border-box"></a>
+        </article>
+    </div>
+    <div class="affect">
+        <h2>Kako dijabetesno oboljenje očiju utiče na vid?</h2>
+        <div class="image-toggle flex">
+            <div class="flex" onclick="this.parentNode.parentNode.classList.remove('active')">
+                <p>Zdravo oko</p>
+                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.589844 10.59L5.16984 6L0.589844 1.41L1.99984 0L7.99984 6L1.99984 12L0.589844 10.59Z" fill="white"/>
+                </svg>
+            </div>
+            <div class="flex" onclick="this.parentNode.parentNode.classList.add('active')">
+                <svg width="8" height="12" viewBox="0 0 8 12" style="transform: rotate(180deg)" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.589844 10.59L5.16984 6L0.589844 1.41L1.99984 0L7.99984 6L1.99984 12L0.589844 10.59Z" fill="white"/>
+                </svg>
+                <p>Oko sa DME</p>
+            </div>
         </div>
-    </nav>
-    <div class="accessibility" onclick="toggleAccessibility(true)">Accessibility</div>
-    <div class="accessibility-block hide">
-        <p onclick="toggleAccessibility(false)">✕</p>
-        <div class="option">
-            <div onclick="decrementContrast()" class="minus"></div>
-            <img src="assets/images/svgs/accessibility/contrast.svg" alt="">
-            <div onclick="incrementContrast()" class="plus"></div>
+        <div class="titles">
+            <h2 class="healthy">Zdravo oko</h2>
+            <h2 class="unhealthy">Oko sa DME</h2>
         </div>
-        <div class="option">
-            <div onclick="decrementSize()" class="minus"></div>
-            <img src="assets/images/svgs/accessibility/text.svg" alt="">
-            <div onclick="incrementSize()" class="plus"></div>
-        </div>
-        <div class="option">
-            <div onclick="decrementSpacing()" class="minus"></div>
-            <img src="assets/images/svgs/accessibility/spacing.svg" alt="">
-            <div onclick="incrementSpacing()" class="plus"></div>
-        </div>
-        <div class="option with-toggle">
-            <img src="assets/images/svgs/accessibility/link.svg" alt="">
-            <label for="link-toggle" class="toggle">
-                <input name="link-toggle" id="link-toggle" hidden type="checkbox" onchange="linkOutlineChange()">
-                <span></span>
-            </label>
+        <div class="images">
+            <img src="assets/images/dr/healthy-view.png" class="healthy" alt="">
+            <img src="assets/images/dr/unhealthy-view.png" class="unhealthy" alt="">
         </div>
     </div>
-    <main>
-        <header class="landing">
-            <h1>Dijabetesno oboljenje očiju</h1>
-            <img class="image" src="assets/images/dr/landing.png" alt="">
-        </header>
-        <article class="about">
-            <h2>O bolesti <sup>1, 2</sup></h2>
-            <p>
-                Dijabetesno oboljenje očiju uključuje stanja kao što su dijabetesna retinopatija (DR) i dijabetesni makularni edem (DME). Obično su posledica nekontrolisano visokog nivoa šećera u krvi i, ukoliko se ne leče, mogu dovesti do gubitka vida.
-                <br><br>
-                Dijabetesna retinopatija (DR) nastaje tako što visok nivo šećera u krvi začepi male krvne sudove u retini (mrežnjači) zbog čega iz tih krvnih sudova počinje da curi krv ili tečnost što dovodi do otoka i prekida dotoka krvi u neke delove retine. Tokom vremena, DR može da dovede do dijabetesnog makularnog edema (DME), koji nastaje tako što oštećeni krvni sudovi počinju da cure u retinu što dalje može da dovede do nagomilavanja tečnosti u oku koje za posledicu može da ima otok (edem). Kada u makuli nastane edem to dovodi do zamućenog ili oslabljenog vida.
-            </p>
-        </article>
-        <div class="spacer" style="padding-top: 10rem">
-            <article class="info with-ellipse">
-                <div class="ellipse"></div>
-                <div class="border"></div>
-                <div class="content">
-                    <h2>Simptomi <sup>3</sup></h2>
-                    <p>Kada se radi o dijabetesnom oboljenju očiju, simptomi mogu da izostanu na samom početku bolesti i pojave se tek kada se stanje pogorša. Iako se simptomi mogu razlikovati od osobe do osobe, obično je u pitanju kombinacija nekih od navedenih simptoma:</p>
-                    <div class="flex">
-                        <div>
-                            <img src="assets/images/dr/symptoms/1.svg" alt="">
-                            <h3>Gubitak delova vidnog polja </h3>
-                            <p>pojava ‘lebdeće’ tamne mrlje ili linije u vidnom polju.</p>
-                        </div>
-                        <div>
-                            <img src="assets/images/dr/symptoms/2.svg" alt="">
-                            <h3>Problem u razlikovanju boja </h3>
-                            <p>teško razlikovanje svetlih od tamnih nijansi.</p>
-                        </div>
-                        <div>
-                            <img src="assets/images/dr/symptoms/3.svg" alt="">
-                            <h3>Zamućeni vid</h3>
-                            <p>vid može postati manje oštar nego pre.</p>
-                        </div>
-                    </div>
-                    <div class="divider"></div>
-                    <h2 style="margin-bottom: 5rem">Faktori rizika <sup>4</sup></h2>
-                    <div class="flex">
-                        <div>
-                            <img src="assets/images/dr/risk-factors/1.svg" alt="">
-                            <h3>Dijagnoza dijabetesa</h3>
-                            <p>nekontrolisani nivo šećera u krvi ili dijagnoza dijabetesa - posebno kod dugogodišnjih pacijenata, postoji veća verovatnoća razvoja dijabetesne retinopatije ili dijabetesnog makularnog edema.</p>
-                        </div>
-                        <div>
-                            <img src="assets/images/dr/risk-factors/2.svg" alt="">
-                            <h3>Genetska predispozicija</h3>
-                            <p>ukoliko u porodici imate nekog sa DR ili DME, veći je rizik za pojavu nekog od ovih stanja.</p>
-                        </div>
-                        <div>
-                            <img src="assets/images/dr/risk-factors/3.svg" alt="">
-                            <h3>Visok krvni pritisak </h3>
-                            <p>može dovesti do začepljenja malih krvnih sudova u oku.</p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div class="affect">
-            <h2>Kako dijabetesno oboljenje očiju utiče na vid?</h2>
-            <div class="image-toggle flex">
-                <div class="flex" onclick="this.parentNode.parentNode.classList.remove('active')">
-                    <p>Zdravo oko</p>
-                    <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.589844 10.59L5.16984 6L0.589844 1.41L1.99984 0L7.99984 6L1.99984 12L0.589844 10.59Z" fill="white"/>
-                    </svg>
-                </div>
-                <div class="flex" onclick="this.parentNode.parentNode.classList.add('active')">
-                    <svg width="8" height="12" viewBox="0 0 8 12" style="transform: rotate(180deg)" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.589844 10.59L5.16984 6L0.589844 1.41L1.99984 0L7.99984 6L1.99984 12L0.589844 10.59Z" fill="white"/>
-                    </svg>
-                    <p>Oko sa DME</p>
-                </div>
+    <div class="references" style="border-top: 1px solid rgba(121, 85, 161, 0.2)">
+        <h2>Reference</h2>
+        <div class="flex">
+            <div>
+                <p>1.Kellogg Eye Center. DME [Internet; cited March 2021]. Available from: <a href="https://www.umkelloggeye.org/conditions-treatments/diabetic-retinopathy">https://www.umkelloggeye.org/conditions-treatments/diabetic-retinopathy</a></p>
+                <p>2.National Eye Institute. Facts About Diabetic Eye Disease. [Internet; cited March 2021]. Available from: <a href="https://nei.nih.gov/health/diabetic/retinopathy">https://nei.nih.gov/health/diabetic/retinopathy</a></p>
             </div>
-            <div class="titles">
-                <h2 class="healthy">Zdravo oko</h2>
-                <h2 class="unhealthy">Oko sa DME</h2>
-            </div>
-            <div class="images">
-                <img src="assets/images/dr/healthy-view.png" class="healthy" alt="">
-                <img src="assets/images/dr/unhealthy-view.png" class="unhealthy" alt="">
+            <div>
+                <p>3.American Academy of Ophthalmology. Diabetic Retinopathy Symptoms. [Internet; cited March  2021]. Available from: <a href="https://www.aao.org/eye-health/diseases/what-is-diabetic-retinopathy">https://www.aao.org/eye-health/diseases/what-is-diabetic-retinopathy</a></p>
+                <p>4.Lee R, Wong TY, Sabanayagam C. Epidemiology of diabetic retinopathy, diabetic macular edema and related vision loss. Eye Vis. 2015; 2:17.</p>
             </div>
         </div>
-        <div class="references">
-            <h2>Reference</h2>
-            <div class="flex">
-                <div>
-                    <p>1.Kellogg Eye Center. DME [Internet; cited March 2021]. Available from: <a href="https://www.umkelloggeye.org/conditions-treatments/diabetic-retinopathy">https://www.umkelloggeye.org/conditions-treatments/diabetic-retinopathy</a></p>
-                    <p>2.National Eye Institute. Facts About Diabetic Eye Disease. [Internet; cited March 2021]. Available from: <a href="https://nei.nih.gov/health/diabetic/retinopathy">https://nei.nih.gov/health/diabetic/retinopathy</a></p>
-                </div>
-                <div>
-                    <p>3.American Academy of Ophthalmology. Diabetic Retinopathy Symptoms. [Internet; cited March  2021]. Available from: <a href="https://www.aao.org/eye-health/diseases/what-is-diabetic-retinopathy">https://www.aao.org/eye-health/diseases/what-is-diabetic-retinopathy</a></p>
-                    <p>4.Lee R, Wong TY, Sabanayagam C. Epidemiology of diabetic retinopathy, diabetic macular edema and related vision loss. Eye Vis. 2015; 2:17.</p>
-                </div>
+    </div>
+    <footer>
+        <div>
+            <div>
+                <a href="/">
+                    <img style="height: 4rem" class="light" src="assets/images/logo-dark.png" alt="">
+                    <img style="height: 4rem" class="dark" src="assets/images/logo.png" alt="">
+                </a>
             </div>
-        </div>
-        <footer>
             <div>
                 <div>
-                    <a href="/">
-                        <img style="height: 4rem" class="light" src="assets/images/logo-dark.png" alt="">
-                        <img style="height: 4rem" class="dark" src="assets/images/logo.png" alt="">
-                    </a>
-                </div>
-                <div>
-                    <div>
-                        <div class="">
-                            <a href="">About Us</a>
-                            <a href="">Contact Us</a>
-                            <a href="">Legal Statement</a>
-                            <a href="">Privacy Statement</a>
-                            <a href="">Cookie Settings</a>
-                        </div>
-                        <p>© 2022 26.05.2022. M-RS-00001394</p>
+                    <div class="">
+
+                        <a href="https://www.rochesrbija.rs/sr/o_nama.html">O nama</a>
+                        <a href="">Kontakt</a>
+                        <a href="https://www.rochesrbija.rs/sr/content/footer_items/legal.htm">Pravna izjava</a>
+                        <a href="https://www.rochesrbija.rs/sr/content/footer_items/Politika-privatnosti.html">Politika privatnosti</a>
+                        <a href="">Podešavanja kolačića</a>
                     </div>
+                    <p>© 2022 26.05.2022. M-RS-00001394</p>
                 </div>
             </div>
-        </footer>
-    </main>
-    <script src="js/accessibility.js" defer></script>
+        </div>
+    </footer>
+</main>
+<script src="js/accessibility.js" defer></script>
 </body>
 </html>

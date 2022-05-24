@@ -137,6 +137,8 @@ p.small {
   --border-size-negative: calc(var(--border-size) * -1);
   --extra-width: calc(160rem * var(--font-size));
   padding-block: var(--border-size);
+  width: 100vw;
+  overflow-x: hidden;
 }
 .spacer .with-ellipse {
   position: relative;
@@ -148,7 +150,7 @@ p.small {
   top: 0;
   left: calc(var(--extra-width) / -2);
   z-index: 1;
-  background-color: #fff;
+  background-color: var(--color-contast);
   border-radius: 50%;
   border: 10px transparent;
 }

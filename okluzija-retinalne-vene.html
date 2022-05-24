@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>La Roche - Home</title>
+
+    <!--  Links  -->
+    <link rel="stylesheet" href="style/presets.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/diseases.css">
+</head>
+<body>
+<nav>
+    <div>
+        <div>
+            <!--                <img class="button" src="assets/images/svgs/hamburger.svg" alt="">-->
+            <a href=""><img src="assets/images/logo-dark.png" alt=""></a>
+        </div>
+        <a href=""><img src="assets/images/svgs/logo.svg" alt="" style="padding-block: .25rem; box-sizing: border-box"></a>
+    </div>
+</nav>
+<div class="accessibility" onclick="toggleAccessibility(true)">DRUGAČIJI POGLEDI</div>
+<div class="accessibility-block hide">
+    <p onclick="toggleAccessibility(false)">✕</p>
+    <div class="option">
+        <div onclick="decrementContrast()" class="minus"></div>
+        <img src="assets/images/svgs/accessibility/contrast.svg" alt="">
+        <div onclick="incrementContrast()" class="plus"></div>
+    </div>
+    <div class="option">
+        <div onclick="decrementSize()" class="minus"></div>
+        <img src="assets/images/svgs/accessibility/text.svg" alt="">
+        <div onclick="incrementSize()" class="plus"></div>
+    </div>
+    <div class="option">
+        <div onclick="decrementSpacing()" class="minus"></div>
+        <img src="assets/images/svgs/accessibility/spacing.svg" alt="">
+        <div onclick="incrementSpacing()" class="plus"></div>
+    </div>
+    <div class="option with-toggle">
+        <img src="assets/images/svgs/accessibility/link.svg" alt="">
+        <label for="link-toggle" class="toggle">
+            <input name="link-toggle" id="link-toggle" hidden type="checkbox" onchange="linkOutlineChange()">
+            <span></span>
+        </label>
+    </div>
+</div>
+<main>
+    <header class="landing inverted">
+        <h1>Dijabetesno oboljenje očiju</h1>
+        <img class="image" src="assets/images/rvo/landing.png" alt="">
+    </header>
+    <article class="about">
+        <h2>O bolesti <sup>1, 2</sup></h2>
+        <p>
+            Do okluzije retinalne vene dolazi kada jedan ili više krvnih sudova u oku postanu začepljeni. To može da dovede do iznenadne, bezbolne promene vida.
+            Postoje dve vrste bolesti, zavisno od vrste zahvaćenih krvnih sudova:
+        </p>
+    </article>
+    <div class="rvo-types">
+        <h2>Postoje dve vrste bolesti, zavisno od vrste zahvaćenih krvnih sudova:</h2>
+        <div class="flex grid">
+            <div>
+                <p class="with-dot">
+                    <span></span>
+                    <b>Okluzija grane retinalne vene</b> – blaža forma bolesti koja nastaje kada se začepe manje vene ili grane u retini.
+                </p>
+            </div>
+            <div>
+                <p class="with-dot">
+                    <span></span>
+                    <b>Centralna okluzija retinalne vene</b> - ozbiljnija forma bolesti, kada se začepi glavna vena u retini.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="spacer" style="padding-top: 10rem">
+        <article class="info with-ellipse">
+            <div class="ellipse"></div>
+            <div class="border"></div>
+            <div class="content">
+                <h2>Simptomi <sup>2</sup></h2>
+                <p>
+                    Glavni simptom bolesti je iznenadna, bezbolna promena vida. Međutim, moguća je pojava i drugih simptoma poput:
+                </p>
+                <div class="flex">
+                    <div>
+                        <img src="assets/images/rvo/symptoms/1.svg" alt="">
+                        <h3>
+                            Privremenog gubitka centralnog vida
+                        </h3>
+                        <p>
+                            može vam postati teško da vidite ono što se nalazi neposredno ispred vas, pa vam aktivnosti poput čitanja takođe mogu biti otežane;
+                        </p>
+                    </div>
+                    <div>
+                        <img src="assets/images/rvo/symptoms/2.svg" alt="">
+                        <h3>
+                            Poremećaja centralnog i perifernog vida
+                        </h3>
+                        <p>
+                            može vam biti teže da vidite ono što se nalazi neposredno ispred vas, ili u okruženju u kome se nalazite.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="assets/images/rvo/symptoms/3.svg" alt="">
+                        <h3>
+                            Zamagljenog vida
+                        </h3>
+                        <p>
+                            centar vašeg vida može da postane zamrljan ili mutan;
+                        </p>
+                    </div>
+                    <div>
+                        <img src="assets/images/rvo/symptoms/4.svg" alt="">
+                        <h3>
+                            Gubitka delova vida
+                        </h3>
+                        <p>
+                            mogu vam se pojaviti „lebdeće“ tamne tačke ili linije u vidnom polju.
+                        </p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <h2>Faktori rizika <sup>4</sup></h2>
+                <p>Najčešći faktori rizika su:</p>
+                <div class="flex">
+                    <div>
+                        <img src="assets/images/rvo/risk-factors/1.svg" alt="">
+                        <h3>
+                            Godine starosti
+                        </h3>
+                        <p>
+                            okluzija retinalne vene je najčešća kod ljudi starijih od 50 godina;
+                        </p>
+                    </div>
+                    <div>
+                        <img src="assets/images/rvo/risk-factors/2.svg" alt="">
+                        <h3>
+                            Visok krvni pritisak;
+                        </h3>
+                    </div>
+                    <div>
+                        <img src="assets/images/rvo/risk-factors/3.svg" alt="">
+                        <h3>
+                            Otvrdnjavanje arterija;
+                        </h3>
+                    </div>
+                    <div>
+                        <img src="assets/images/rvo/risk-factors/2.svg" alt="">
+                        <h3>Dijabetes</h3>
+                    </div>
+                    <div>
+                        <img src="assets/images/rvo/risk-factors/3.svg" alt="">
+                        <h3>Glaukom</h3>
+                        <p>
+                            Ovo je stanje koje uzrokuje nakupljanje tečnosti u oku što može izazvati oštećenje optičkog nerva
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div class="affect">
+        <h2>Kako dijabetesno oboljenje očiju utiče na vid?</h2>
+        <div class="image-toggle flex">
+            <div class="flex" onclick="this.parentNode.parentNode.classList.remove('active')">
+                <p>Zdravo oko</p>
+                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.589844 10.59L5.16984 6L0.589844 1.41L1.99984 0L7.99984 6L1.99984 12L0.589844 10.59Z" fill="white"/>
+                </svg>
+            </div>
+            <div class="flex" onclick="this.parentNode.parentNode.classList.add('active')">
+                <svg width="8" height="12" viewBox="0 0 8 12" style="transform: rotate(180deg)" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.589844 10.59L5.16984 6L0.589844 1.41L1.99984 0L7.99984 6L1.99984 12L0.589844 10.59Z" fill="white"/>
+                </svg>
+                <p>Oko sa DME</p>
+            </div>
+        </div>
+        <div class="titles">
+            <h2 class="healthy">Zdravo oko</h2>
+            <h2 class="unhealthy">Oko sa DME</h2>
+        </div>
+        <div class="images">
+            <img src="assets/images/rvo/healthy-view.png" class="healthy" alt="">
+            <img src="assets/images/rvo/unhealthy-view.png" class="unhealthy" alt="">
+        </div>
+    </div>
+    <article class="advices">
+        <h2>Korisni saveti i trikovi za život sa oslabljenim vidom</h2>
+        <p>
+            Prilagođavanje životu sa oslabljenim vidom može da bude teško, ali nekoliko jednostavnih promena može mnogo da pomogne.<br> Usvojite ove praktične savete i trikove kako biste lakše savladali sve promene u vezi sa oslabljenim vidom. Svima nam je veoma važno da budemo samostalni u svakodnevnim aktivnostima, ali je još važnije da ostanemo bezbedni.
+        </p>
+        <div class="flex grid">
+            <div class="">
+                <h2 class="with-dot">
+                    <span></span>
+                    Koristite naočare sa monofokalnim sočivima
+                </h2>
+                <p>
+                    Rizik od pada možete smanjiti tako što ćete koristiti naočare sa monofokalnim sočivima, umesto onih sa multifokalnim. Razgovarajte sa vašim lekarom kako biste saznali više.
+                </p>
+            </div>
+            <div class="">
+                <h2 class="with-dot">
+                    <span></span>
+                    Koristite LED sijalice
+                </h2>
+                <p>
+                    LED sijalice mogu da pomognu da se prostorije ravnomernije osvetle, tako da oči ne moraju da se naprežu i prilagođavaju okruženju.
+                </p>
+            </div>
+            <div class="">
+                <h2 class="with-dot">
+                    <span></span>
+                    Raščistite prolaze
+                </h2>
+                <p>
+                    Mesta koja koristite za prolaz treba da budu rasčišćena i bez suvišnih predmeta (npr. kablova ili tepiha) kako bi se smanjila opasnost od saplitanja.
+                </p>
+            </div>
+            <div class="">
+                <h2 class="with-dot">
+                    <span></span>
+                    Koristite sjajne trake za obeležavanje
+                </h2>
+                <p>
+                    Obeležite ivice stepenica kod kuće sjajnim trakama ili bojom kako biste ih lakše videli.
+                </p>
+            </div>
+            <div class="">
+                <h2 class="with-dot">
+                    <span></span>
+                    Nađite najbolje rešenje za kretanje van kuće
+                </h2>
+                <p>
+                    Ako više ne možete da vozite, ima i drugih rešenja za kretanje van kuće:
+                </p>
+            </div>
+            <div class="">
+                <h2 class="with-dot">
+                    <span></span>
+                    Javni prevoz
+                </h2>
+                <p>
+                    Do okluzije retinalne vene dolazi kada jedan ili više krvnih sudova u oku postanu začepljeni. To može da dovede do iznenadne, bezbolne promene vida. Postoje dve vrste bolesti, zavisno od vrste zahvaćenih krvnih sudova:
+                </p>
+            </div>
+            <div class="">
+                <h2 class="with-dot">
+                    <span></span>
+                    Porodica i prijatelji
+                </h2>
+                <p>
+                    Nemojte se ustručavati da zamolite svoje najmilije da vam pomognu da odete od tačke A do tačke B.
+                </p>
+            </div>
+            <div class="">
+                <h2 class="with-dot">
+                    <span></span>
+                    Usluge prevoza za ljude sa oslabljenim vidom
+                </h2>
+                <p>
+                    Postoji određeni broj dostupnih službi za prevoz namenjen ljudima sa oslabljenim vidom.
+                </p>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <h2>
+            Olakšajte sebi čitanje i pisanje
+        </h2>
+        <p>
+            Nemogućnost čitanja i pisanja može da utiče na vaš svakodnevni život, od hobija do rada. Ali uvek postoje načini da se i to olakša:
+        </p>
+        <div class="flex grid">
+            <div class="">
+                <h2 class="with-dot">
+                    <span></span>
+                    Pojačani kontrast
+                </h2>
+                <p>
+                    Korišćenje hartije u boji može da vam pomogne da pišete sa pojačanim kontrastom. Takođe i olovke/penkala sa debljom linijom i šabloni za pisanje.
+                </p>
+            </div>
+            <div class="">
+                <h2 class="with-dot">
+                    <span></span>
+                    Radna lampa
+                </h2>
+                <p>
+                    Radna lampa može pomoći da se prilagodi osvetljenje u vašoj sobi koje odgovara vašim potrebama.
+                </p>
+            </div>
+            <div class="">
+                <h2 class="with-dot">
+                    <span></span>
+                    Uveličavajuće staklo
+                </h2>
+                <p>
+                    Uveličavajuće staklo može da učini knjige i časopise čitljivijim. Možete da nađete široki spektar knjiga sa krupnijim slovima i e-knjige u lokalnoj biblioteci.
+                </p>
+            </div>
+            <div class="">
+                <h2 class="with-dot">
+                    <span></span>
+                    Kompjuteri
+                </h2>
+                <p>
+                    Kada koristite kompjuter, zapamtite da možete da promenite različite karakteristike kako biste lakše čitali tekst. Adapteri za ekran i filteri za sočiva takođe mogu da na najmanju meru spuste bljesak sa ekrana dok radite.
+                </p>
+            </div>
+            <div class="" style="text-align: center; margin-inline: auto">
+                <h2 class="with-dot" style="margin-inline: auto">
+                    <span></span>
+                    Audio
+                </h2>
+                <p>
+                    Aplikacije sa snimljenim tonom i audioknjige mogu biti korisne kada želite da odmorite oči.
+                </p>
+            </div>
+        </div>
+    </article>
+    <div class="references" style="border-top: 1px solid rgba(121, 85, 161, 0.2)">
+        <h2>Reference</h2>
+        <div class="flex">
+            <div>
+                <p>1. Macular Society. Retinal vein occlusion. [Internet; cited March 2021]. Available from: <a href="https://www.macularsociety.org/retinal-vein-occlusion">https://www.macularsociety.org/retinal-vein-occlusion</a></p>
+                <p>2. MacDonald, D. (2013). The ABCs of RVO: A review of retinal venous occlusion. Clinical and Experimental Optometry, n/a.<a href="https://doi.org/10.1111/cxo.12120">https://doi.org/10.1111/cxo.12120</a></p>
+            </div>
+            <div>
+                <p>3. Petr Kolar, "Risk Factors for Central and Branch Retinal Vein Occlusion: A Meta-Analysis of Published Clinical Data", Journal of Ophthalmology, vol. 2014, Article ID 724780, 5 pages, 2014. <a href="https://doi.org/10.1155/2014/724780">https://doi.org/10.1155/2014/724780</a></p>
+                <p>4. Laouri M, Chen E, Looman M, Gallagher M. The burden of disease of retinal vein occlusion: review of the literature. Eye. 2011; 25:981-8.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <div>
+                <a href="/">
+                    <img style="height: 4rem" class="light" src="assets/images/logo-dark.png" alt="">
+                    <img style="height: 4rem" class="dark" src="assets/images/logo.png" alt="">
+                </a>
+            </div>
+            <div>
+                <div>
+                    <div class="">
+
+                        <a href="https://www.rochesrbija.rs/sr/o_nama.html">O nama</a>
+                        <a href="">Kontakt</a>
+                        <a href="https://www.rochesrbija.rs/sr/content/footer_items/legal.htm">Pravna izjava</a>
+                        <a href="https://www.rochesrbija.rs/sr/content/footer_items/Politika-privatnosti.html">Politika privatnosti</a>
+                        <a href="">Podešavanja kolačića</a>
+                    </div>
+                    <p>© 2022 26.05.2022. M-RS-00001394</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</main>
+<script src="js/accessibility.js" defer></script>
+</body>
+</html>
+
