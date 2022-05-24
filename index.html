@@ -13,15 +13,32 @@
     <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
-    <nav>
+<nav>
+    <div>
         <div>
-            <div>
-<!--                <img class="button" src="assets/images/svgs/hamburger.svg" alt="">-->
-                <a href=""><img src="assets/images/logo-dark.png" alt=""></a>
-            </div>
-            <a href=""><img src="assets/images/svgs/logo.svg" alt="" style="padding-block: .25rem; box-sizing: border-box"></a>
+            <img class="button" src="assets/images/svgs/hamburger.svg" alt="" onclick="document.querySelector('body').classList.toggle('nav-active')">
+            <a href="/"><img src="assets/images/logo-dark.png" alt=""></a>
         </div>
-    </nav>
+        <a href="/"><img src="assets/images/svgs/logo.svg" alt="" style="padding-block: .25rem; box-sizing: border-box"></a>
+    </div>
+</nav>
+<div class="menu">
+    <a href="/senilna-degeneracija-makule">Senilna degeneracija makule</a>
+    <a href="/dijabetesno-oboljenje-ociju">Dijabetesno oboljenje očiju</a>
+    <a href="/okluzija-retinalne-vene.html">Okluzija retinalne vene</a>
+    <div>
+        <a href="/">
+            <img style="height: 4rem" class="light" src="assets/images/logo-dark.png" alt="">
+        </a>
+        <div class="flex">
+            <a href="https://www.rochesrbija.rs/sr/o_nama.html">O nama</a>
+            <a href="">Kontakt</a>
+            <a href="https://www.rochesrbija.rs/sr/content/footer_items/legal.htm">Pravna izjava</a>
+            <a href="https://www.rochesrbija.rs/sr/content/footer_items/Politika-privatnosti.html">Politika privatnosti</a>
+            <a href="">Podešavanja kolačića</a>
+        </div>
+    </div>
+</div>
     <div class="accessibility" onclick="toggleAccessibility(true)">DRUGAČIJI POGLEDI</div>
     <div class="accessibility-block hide">
         <p onclick="toggleAccessibility(false)">✕</p>
