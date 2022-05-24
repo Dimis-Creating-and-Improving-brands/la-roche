@@ -8,6 +8,6 @@
     Email: {$email} \n
     Message: {$message}";
     
-    mail('liondj007@gmail.com', 'Contact form', $mail);
+    mail('info@tvojpogled.rs', 'Contact form', $mail);
     print_r($mail);
 ?>
