@@ -34,6 +34,7 @@ body.dark .accessibility-block {
 }
 .landing.inverted .image {
   object-position: left;
+  max-width: 70vw;
 }
 .landing {
   background-color: var(--color-primary);
