@@ -369,6 +369,13 @@ body.dark .landing h1 {
 .advices .divider {
   margin-bottom: 4rem;
 }
+.advices {
+  background-color: var(--background-light);
+}
+.advices h2,
+.advices p {
+  color: var(--color-primary);
+}
 .affect {
   display: flex;
   flex-direction: column;
@@ -471,6 +478,9 @@ body.dark .landing h1 {
 }
 .affect .image-toggle div:first-of-type > p {
   color: var(--color-contast);
+}
+.affect .image-toggle svg > path {
+  fill: var(--color-contast) !important;
 }
 .affect.active > .image-toggle div:first-of-type > p {
   color: var(--color-primary);
