@@ -94,6 +94,7 @@ body.nav-active {
 }
 body.nav-active .menu {
   opacity: 1;
+  pointer-events: unset;
 }
 .accessibility {
   padding: 1rem 1.25rem;
