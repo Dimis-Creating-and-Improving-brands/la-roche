@@ -22,6 +22,9 @@ nav {
       a {
         margin-left: 1rem;
       }
+      img.button {
+        height: 1.5rem !important;
+      }
     }
     > a, > a > img {
       height: 2.5rem;
@@ -30,6 +33,66 @@ nav {
     img {
       height: 3rem;
     }
+  }
+}
+
+.menu {
+  height: calc(100vh - 5.5rem);
+  position: fixed;
+  top: 5.5rem;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
+  width: 100vw;
+  transition: opacity.3s;
+  a {
+    transition: color .3s;
+  }
+  > a {
+    margin-bottom: 4rem;
+    &:first-of-type {
+      margin-top: auto;
+    }
+    &:last-of-type {
+      margin-bottom: auto;
+    }
+  }
+  > div {
+    padding-block: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+     img {
+       margin-bottom: 2rem;
+     }
+    .flex {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    a {
+      margin-inline: 1rem;
+    }
+  }
+}
+.menu {
+  background-color: #212121;
+  a {
+    color: #fff;
+    &.active, &:hover {
+      color: var(--color-accent);
+    }
+  }
+}
+
+body.nav-active {
+  overflow-y: hidden;
+  .menu {
+    opacity: 1;
   }
 }
 

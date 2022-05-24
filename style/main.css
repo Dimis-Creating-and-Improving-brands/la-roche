@@ -25,6 +25,9 @@ nav > div div {
 nav > div div a {
   margin-left: 1rem;
 }
+nav > div div img.button {
+  height: 1.5rem !important;
+}
 nav > div > a,
 nav > div > a > img {
   height: 2.5rem;
@@ -32,6 +35,65 @@ nav > div > a > img {
 }
 nav > div img {
   height: 3rem;
+}
+.menu {
+  height: calc(100vh - 5.5rem);
+  position: fixed;
+  top: 5.5rem;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
+  width: 100vw;
+  transition: opacity 0.3s;
+}
+.menu a {
+  transition: color 0.3s;
+}
+.menu > a {
+  margin-bottom: 4rem;
+}
+.menu > a:first-of-type {
+  margin-top: auto;
+}
+.menu > a:last-of-type {
+  margin-bottom: auto;
+}
+.menu > div {
+  padding-block: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.menu > div img {
+  margin-bottom: 2rem;
+}
+.menu > div .flex {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.menu > div a {
+  margin-inline: 1rem;
+}
+.menu {
+  background-color: #212121;
+}
+.menu a {
+  color: #fff;
+}
+.menu a.active,
+.menu a:hover {
+  color: var(--color-accent);
+}
+body.nav-active {
+  overflow-y: hidden;
+}
+body.nav-active .menu {
+  opacity: 1;
 }
 .accessibility {
   padding: 1rem 1.25rem;

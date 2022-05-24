@@ -69,6 +69,11 @@ button,
 .button {
   border: 0.25rem solid transparent;
 }
+a:hover,
+button:hover,
+.button:hover {
+  cursor: pointer;
+}
 body.link-outlined a,
 body.link-outlined button,
 body.link-outlined .button {

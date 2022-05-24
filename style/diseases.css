@@ -562,7 +562,7 @@ body.dark .landing h1 {
 @media (max-width: 1279px) {
   .landing {
     height: auto;
-    flex-direction: column;
+    flex-direction: column !important;
   }
   .landing h1 {
     text-align: center;
