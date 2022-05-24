@@ -48,7 +48,8 @@ body.dark .landing {
 .future p {
   margin-bottom: 5rem;
 }
-.future iframe {
+.future iframe,
+.future video {
   width: 69rem;
   height: 39rem;
   max-width: 100%;
