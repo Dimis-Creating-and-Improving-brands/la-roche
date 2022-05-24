@@ -354,6 +354,7 @@ body.dark .register .checkbox {
     margin-right: auto;
     margin-bottom: 3rem;
     width: 100%;
+    height: auto;
   }
   .understanding div {
     margin-left: auto;
