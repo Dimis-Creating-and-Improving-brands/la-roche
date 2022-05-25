@@ -66,3 +66,22 @@ function toggleAccessibility(value) {
     if(value) accessibility.classList.remove('hide');
     else accessibility.classList.add('hide')
 }
+
+const popupOpenedAtKey = "opened_at";
+
+function canOpenPopup() {
+    const lastOpened = localStorage.getItem(popupOpenedAtKey);
+    if(!lastOpened) return true;
+    const twoWeeksInMs = 1000 * 60 * 60 * 24 * 14;
+    const lastOpenedDateInMs = new Date(lastOpened).getTime();
+    const currentTimeInMs = new Date().getTime();
+    return (currentTimeInMs - lastOpenedDateInMs) > twoWeeksInMs
+}
+
+function openPopupIfCan() {
+    if(!canOpenPopup()) return;
+    document.body.classList.add('active-popup');
+    localStorage.setItem(popupOpenedAtKey, new Date().toISOString());
+}
+
+if(canInitPopup) openPopupIfCan();
