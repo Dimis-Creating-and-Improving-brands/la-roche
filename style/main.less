@@ -139,15 +139,15 @@ body.active-popup {
       span {
         width: 30em;
         max-width: 100%;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         text-transform: uppercase;
         color: #fff;
         text-align: center;
         line-height: 1.5;
         transition: font-size .3s, letter-spacing .3s;
-        animation-duration: 15s;
+        animation-duration: 10s;
         animation-name: accessibility;
-        animation-iteration-count: infinite;
+        //animation-iteration-count: infinite;
       }
     }
   }
@@ -155,41 +155,16 @@ body.active-popup {
 
 @keyframes accessibility {
   0% {
-    font-size: 1.5rem;
-    letter-spacing: .02em;
+    font-size: 1rem;
    }
-
-  15% {
-    font-size: 1.5rem;
-  }
-  20% {
-    font-size: 2.25rem;
-  }
-
-  35% {
-    letter-spacing: .02em;
-  }
   40% {
-    letter-spacing: .1em;
-  }
-
-  55% {
-    font-size: 2.25rem;
+    font-size: 1rem;
   }
   60% {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
-
-  75% {
-    letter-spacing: .1em;
-  }
-  80% {
-    letter-spacing: .02em;
-  }
-
   100% {
-    letter-spacing: .02em;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -410,9 +385,6 @@ body.dark footer {
 }
 
 @media(max-width: 1279px) {
-  .overlay {
-    display: none !important;
-  }
   footer {
     > div {
       > div {
@@ -436,6 +408,16 @@ body.dark footer {
             margin-block: 4rem 2rem;
           }
         }
+      }
+    }
+  }
+  body.active-popup .overlay {
+    .popup {
+      height: auto;
+      padding: 3rem 1.5rem;
+      .close {
+        top: 1.5rem;
+        right: 1.5rem;
       }
     }
   }
