@@ -79,7 +79,7 @@ function canOpenPopup() {
 }
 
 function openPopupIfCan() {
-    // if(!canOpenPopup()) return;
+    if(!canOpenPopup()) return;
     document.body.classList.add('active-popup');
     localStorage.setItem(popupOpenedAtKey, new Date().toISOString());
 }
