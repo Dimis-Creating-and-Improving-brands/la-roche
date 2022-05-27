@@ -140,7 +140,7 @@ body.active-popup .overlay .popup .close {
 body.active-popup .overlay .popup span {
   width: 30em;
   max-width: 100%;
-  font-size: 1.375rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   color: #fff;
   text-align: center;
@@ -151,16 +151,16 @@ body.active-popup .overlay .popup span {
 }
 @keyframes accessibility {
   0% {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
   40% {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
   60% {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
   100% {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 }
 .accessibility {
