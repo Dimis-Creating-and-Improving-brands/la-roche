@@ -101,6 +101,8 @@ body.nav-active .menu {
   display: none;
 }
 body.active-popup {
+  --initial-size: 1.5rem;
+  --increased-size: 1.875rem;
   overflow: hidden;
 }
 body.active-popup .overlay {
@@ -118,9 +120,9 @@ body.active-popup .overlay {
   justify-content: center;
 }
 body.active-popup .overlay .popup {
-  width: 50rem;
+  width: 60rem;
   max-width: 100%;
-  height: 28rem;
+  height: 30rem;
   max-height: 100%;
   min-height: 30rem;
   position: relative;
@@ -135,12 +137,12 @@ body.active-popup .overlay .popup .close {
   position: absolute;
   top: 2rem;
   right: 2rem;
-  height: 1.5rem;
+  height: 2rem;
 }
 body.active-popup .overlay .popup span {
   width: 30em;
   max-width: 100%;
-  font-size: 1.5rem;
+  font-size: var(--increased-size);
   text-transform: uppercase;
   color: #fff;
   text-align: center;
@@ -151,16 +153,16 @@ body.active-popup .overlay .popup span {
 }
 @keyframes accessibility {
   0% {
-    font-size: 1.25rem;
+    font-size: var(--initial-size);
   }
   40% {
-    font-size: 1.25rem;
+    font-size: var(--initial-size);
   }
   60% {
-    font-size: 1.5rem;
+    font-size: var(--increased-size);
   }
   100% {
-    font-size: 1.5rem;
+    font-size: var(--increased-size);
   }
 }
 .accessibility {
@@ -390,6 +392,10 @@ body.dark footer .dark {
   }
   footer > div > div:last-of-type > div:last-of-type p {
     margin-block: 4rem 2rem;
+  }
+  body.active-popup .overlay {
+    --initial-size: 1.25rem;
+    --increased-size: 1.5rem;
   }
   body.active-popup .overlay .popup {
     height: auto;

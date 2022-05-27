@@ -103,6 +103,8 @@ body.nav-active {
 }
 
 body.active-popup {
+  --initial-size: 1.5rem;
+  --increased-size: 1.875rem;
   overflow: hidden;
   .overlay {
     display: flex;
@@ -118,9 +120,9 @@ body.active-popup {
     align-items: center;
     justify-content: center;
     .popup {
-      width: 50rem;
+      width: 60rem;
       max-width: 100%;
-      height: 28rem;
+      height: 30rem;
       max-height: 100%;
       min-height: 30rem;
       position: relative;
@@ -134,12 +136,12 @@ body.active-popup {
         position: absolute;
         top: 2rem;
         right: 2rem;
-        height: 1.5rem;
+        height: 2rem;
       }
       span {
         width: 30em;
         max-width: 100%;
-        font-size: 1.5rem;
+        font-size: var(--increased-size);
         text-transform: uppercase;
         color: #fff;
         text-align: center;
@@ -155,16 +157,16 @@ body.active-popup {
 
 @keyframes accessibility {
   0% {
-    font-size: 1.25rem;
+    font-size: var(--initial-size);
    }
   40% {
-    font-size: 1.25rem;
+    font-size: var(--initial-size);
   }
   60% {
-    font-size: 1.5rem;
+    font-size: var(--increased-size);
   }
   100% {
-    font-size: 1.5rem;
+    font-size: var(--increased-size);
   }
 }
 
@@ -412,6 +414,8 @@ body.dark footer {
     }
   }
   body.active-popup .overlay {
+    --initial-size: 1.25rem;
+    --increased-size: 1.5rem;
     .popup {
       height: auto;
       padding: 3rem 1.5rem;
