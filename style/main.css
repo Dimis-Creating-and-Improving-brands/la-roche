@@ -17,13 +17,15 @@ nav > div {
   margin-inline: auto;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row-reverse;
 }
 nav > div div {
   display: flex;
   align-items: center;
+  flex-direction: row-reverse;
 }
 nav > div div a {
-  margin-left: 1rem;
+  margin-right: 1rem;
 }
 nav > div div img.button {
   height: 1.5rem !important;
