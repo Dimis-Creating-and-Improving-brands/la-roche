@@ -703,6 +703,12 @@ body.dark .landing h1 {
   .with-dot > span {
     display: none;
   }
+  div.how-it-works {
+    padding-bottom: 3rem;
+  }
+  .affect {
+    padding-bottom: 3rem;
+  }
   .advices {
     padding-bottom: 1rem;
   }
